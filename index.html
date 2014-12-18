@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-<link rel="stylesheet" href="main.css">
-<!--<link href='http://fonts.googleapis.com/css?family=Raleway:100%7COpen+Sans:300' rel='stylesheet' type='text/css'>-->
-
-<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>-->
-
-<script src="js/jquery-latest.min.js"></script>
-
-<script>
-
-	var updateNavbarOffset = function(){
-            var h = $("").offset({scroll:false}).top;
-    }
-
-</script>
-
-</head>
-
-<body>
-
 <!--
 
 SSSSS  IIIIII  DDDDD
@@ -33,8 +13,36 @@ Handmade ASCII art is how you make the world a better place.
 
 -->
 
+<head>
+<link rel="stylesheet" href="main.css">
+<!--<link href='http://fonts.googleapis.com/css?family=Raleway:100%7COpen+Sans:300' rel='stylesheet' type='text/css'>-->
+
+<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>-->
+
+<script src="js/jquery-latest.min.js"></script>
+
+<script>
+
+	var updateHeaderVisibility = function(){
+        var scrollingHeaderTop = $("#scrolling-header").offset().top;
+        var pixelsScrolled = $("body").scrollTop();
+    
+    	$("#scrolling-header").toggleClass( "transparent", scrollingHeaderTop<pixelsScrolled-5 );
+
+    	console.log( scrollingHeaderTop<pixelsScrolled);
+    
+    }
+
+    $(window).scroll(updateHeaderVisibility);
+
+</script>
+
+</head>
+
+<body>
+
 <div id="pre-header"></div>
-<header>
+<header id="scrolling-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
 		<div class="flex-item"><h2> About </h2> </div>
@@ -43,7 +51,7 @@ Handmade ASCII art is how you make the world a better place.
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
 </header>
-<header id="scrolling-header">
+<header id="fixed-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
 		<div class="flex-item"><h2> About </h2> </div>
@@ -98,6 +106,10 @@ Handmade ASCII art is how you make the world a better place.
 <footer>
 	<p>Website built from scratch with &lt;3 by Sidney Durant.</p>
 </footer>
+
+<div style="height:1000px">>
+contenejaskldfj;alksjdf;lkajsdf
+</div>
 
 </body>
 
