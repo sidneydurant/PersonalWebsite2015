@@ -14,6 +14,7 @@ Handmade ASCII art is how you make the world a better place.
 -->
 
 <head>
+<title>Sidney Durant's portfolio!</title>
 <link rel="stylesheet" href="main.css">
 <!--<link href='http://fonts.googleapis.com/css?family=Raleway:100%7COpen+Sans:300' rel='stylesheet' type='text/css'>-->
 
@@ -27,10 +28,12 @@ Handmade ASCII art is how you make the world a better place.
         var scrollingHeaderTop = $("#scrolling-header").offset().top;
         var pixelsScrolled = $("body").scrollTop();
     
-    	$("#scrolling-header").toggleClass( "transparent", scrollingHeaderTop<pixelsScrolled-5 );
+    	/*$("#scrolling-header").toggleClass( "transparent", scrollingHeaderTop<pixelsScrolled-5 );*/
 
-    	console.log( scrollingHeaderTop<pixelsScrolled);
-    
+    	$("#fixed-header").toggleClass( "transparent", scrollingHeaderTop>pixelsScrolled );
+
+    	$("#fixed-header").toggleClass( "shadowed", scrollingHeaderTop<pixelsScrolled );
+    	console.log( scrollingHeaderTop>pixelsScrolled);
     }
 
     $(window).scroll(updateHeaderVisibility);
@@ -51,7 +54,7 @@ Handmade ASCII art is how you make the world a better place.
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
 </header>
-<header id="fixed-header">
+<header id="fixed-header" class="transparent">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
 		<div class="flex-item"><h2> About </h2> </div>

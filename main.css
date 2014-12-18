@@ -1,4 +1,16 @@
 /* the command to watch is: "sass --watch test.scss:test.css" */
+/*
+
+I need to modify this setup. Make it so that on flexbox cross axis
+the headers are justified downwards. Then make it so that the line-height
+is what determines how high 'up' the h1 is. Then all of the blue can
+be one header element. Fade the shadow in when you've scrolled far enough and
+switch to fixed positioning, and decrease the line-height
+
+Then make divs for a laptop and a phone and a browser. Use sass and
+variables wisely (and mixins! (?) )
+
+*/
 * {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   text-rendering: optimizeLegibility;
@@ -12,24 +24,34 @@
 .transparent {
   opacity: 0 !important; }
 
+.shadowed {
+  box-shadow: 0px 0px 7px black; }
+
 h1, h2 {
   font-family: "Raleway", sans-serif;
   font-weight: lighter;
-  font-size: 32px;
+  font-size: 34px;
   color: #ffffff; }
 
 h1 {
-  font-size: 50px;
-  line-height: 75px; }
+  font-size: 48px;
+  line-height: 64px; }
+  @media (max-width: 512px) {
+    h1 {
+      font-size: 40px; } }
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 32px; } }
 
 #fixed-header h1, #fixed-header h2 {
-  font-size: 32px;
+  font-size: 34px;
   line-height: 64px; }
 
 h3 {
   text-align: center;
   font-variant: small-caps;
   font-size: 26px;
+  line-height: 80px;
   font-weight: lighter; }
 
 p {
@@ -45,11 +67,14 @@ p {
   flex-flow: row nowrap;
   width: 80%;
   margin: auto; }
+  @media (max-width: 1024px) {
+    .flex-container #contact, #intro .flex-container {
+      width: 100%; } }
 
 #pre-header {
   background-color: #298bee;
   height: 300px;
-  z-index: 2;
+  z-index: 1;
   position: relative; }
 
 #fixed-header {
@@ -58,8 +83,8 @@ p {
   background-color: #298bee;
   height: 64px;
   width: 100%;
-  z-index: 1;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
+  z-index: 2;
+  transition: box-shadow .25s; }
 
 header {
   background-color: #298bee;
@@ -72,6 +97,9 @@ header {
     flex-grow: 0; }
   header h2 {
     text-align: right; }
+    @media (max-width: 1024px) {
+      header h2 {
+        display: none; } }
   header .flex-container .flex-item:first-child {
     flex-grow: 5; }
 
@@ -106,16 +134,7 @@ header {
     border-width: 3px;
     border-color: #ffffff; }
 
-@media (max-width: 900px) {
-  #intro .flex-container {
-    width: 100%; }
-
-  #contact .flex-container {
-    width: 100%; }
-
-  header h2 {
-    display: none; } }
-@media (max-width: 512px) {
+@media (max-width: 512jpx) {
   .flex-container {
     flex-direction: column; }
 

@@ -6,6 +6,28 @@ $dark-color: #3c3c3c;
 $light-color: #ffffff;
 $text-opacity: .87;
 
+$narrow-breakpoint: 350px;
+$medium-breakpoint: 512jpx;
+$wide-breakpoint: 1024px;
+
+$short-breakpoint: 0px;
+$tall-breakpoint: 0px;
+
+
+/*
+
+I need to modify this setup. Make it so that on flexbox cross axis
+the headers are justified downwards. Then make it so that the line-height
+is what determines how high 'up' the h1 is. Then all of the blue can
+be one header element. Fade the shadow in when you've scrolled far enough and
+switch to fixed positioning, and decrease the line-height
+
+Then make divs for a laptop and a phone and a browser. Use sass and
+variables wisely (and mixins! (?) )
+
+*/
+
+
 *{
 	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 	text-rendering: optimizeLegibility;
@@ -22,20 +44,30 @@ $text-opacity: .87;
 	opacity: 0 !important;
 }
 
+.shadowed{
+	box-shadow: 0px 0px 7px rgba(0,0,0,1);
+}
+
 h1, h2{
 	font-family: "Raleway", sans-serif;
 	font-weight: lighter;
-	font-size: 32px;
+	font-size: 34px;
 	color: $light-color;
 }
 
 h1{
-	font-size: 50px;
-	line-height: 75px;
+	font-size: 48px;
+	line-height: 64px;
+	@media (max-width: 512px){
+		font-size: 40px;
+	}
+	@media (max-width: 350px){
+		font-size: 32px;
+	}
 }
 
 #fixed-header h1, #fixed-header h2{
-	font-size: 32px;
+	font-size: 34px;
 	line-height: 64px;
 }
 
@@ -43,6 +75,7 @@ h3{
 	text-align: center;
 	font-variant: small-caps;
 	font-size: 26px;
+	line-height: 80px;
 	font-weight: lighter;
 }
 
@@ -60,12 +93,19 @@ p{
 	flex-flow: row nowrap;
 	width: 80%;
 	margin: auto;
+
+	#contact, #intro &{
+		@media (max-width: $wide-breakpoint){
+			width: 100%;
+		}
+	} 
+
 }
 
 #pre-header{
 	background-color: $primary-color;
 	height: 300px;
-	z-index: 2;
+	z-index: 1;
 	position: relative;
 }
 
@@ -75,8 +115,8 @@ p{
 	background-color: $primary-color;
 	height: 64px;
 	width: 100%;
-	z-index: 1;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+	z-index: 2;
+	transition: box-shadow .25s;
 }
 
 header{
@@ -95,6 +135,9 @@ header{
 
 	h2{
 		text-align: right;
+		@media (max-width: $wide-breakpoint){
+			display: none;
+		}
 	}
 
 	.flex-container .flex-item:first-child{
@@ -143,19 +186,7 @@ header{
 	}
 }
 
-@media (max-width: 900px){
-	#intro .flex-container{
-		width: 100%;
-	}
-	#contact .flex-container{
-		width: 100%;
-	}
-	header h2{
-		display: none;
-	}
-}
-
-@media (max-width: 512px){
+@media (max-width: $medium-breakpoint){
 	.flex-container{
 		flex-direction: column;
 	}
