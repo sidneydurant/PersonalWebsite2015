@@ -16,27 +16,26 @@ Handmade ASCII art is how you make the world a better place.
 <head>
 <title>Sidney Durant's portfolio!</title>
 <link rel="stylesheet" href="main.css">
-<!--<link href='http://fonts.googleapis.com/css?family=Raleway:100%7COpen+Sans:300' rel='stylesheet' type='text/css'>-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
 
 <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>-->
 
-<script src="js/jquery-latest.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
 <script>
 
-	var updateHeaderVisibility = function(){
-        var scrollingHeaderTop = $("#scrolling-header").offset().top;
-        var pixelsScrolled = $("body").scrollTop();
-    
-    	/*$("#scrolling-header").toggleClass( "transparent", scrollingHeaderTop<pixelsScrolled-5 );*/
+	var updateHeader = function(){
+        var fixedHeaderTop = $("#fixed-header").offset().top;
+        var scrollingHeaderHeight = parseInt($("#scrolling-header").css("padding-top"), 10);
+        var fixedHeaderBottom = fixedHeaderTop + $("#fixed-header").height();
+        var scrollingHeaderBottom = $("#scrolling-header").outerHeight();
 
-    	$("#fixed-header").toggleClass( "transparent", scrollingHeaderTop>pixelsScrolled );
-
-    	$("#fixed-header").toggleClass( "shadowed", scrollingHeaderTop<pixelsScrolled );
-    	console.log( scrollingHeaderTop>pixelsScrolled);
+    	$("#fixed-header").toggleClass( "opaque", fixedHeaderTop>=scrollingHeaderHeight );
+    	$("#scrolling-header").children().toggleClass( "transparent", fixedHeaderTop>=scrollingHeaderHeight );
+    	$("#fixed-header").toggleClass( "shadowed", fixedHeaderBottom>=scrollingHeaderBottom);
     }
 
-    $(window).scroll(updateHeaderVisibility);
+    $(window).scroll(updateHeader);
 
 </script>
 
@@ -44,21 +43,20 @@ Handmade ASCII art is how you make the world a better place.
 
 <body>
 
-<div id="pre-header"></div>
-<header id="scrolling-header">
+<!--<div id="lowpoly"></div>-->
+
+<header id="fixed-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
-		<div class="flex-item"><h2> About </h2> </div>
-		<div class="flex-item"><h2> Skills </h2> </div>
+		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Projects </h2> </div>
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
 </header>
-<header id="fixed-header" class="transparent">
+<header id="scrolling-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
-		<div class="flex-item"><h2> About </h2> </div>
-		<div class="flex-item"><h2> Skills </h2> </div>
+		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Projects </h2> </div>
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
@@ -86,6 +84,10 @@ Handmade ASCII art is how you make the world a better place.
 	</div>
 </div>
 
+<div style="height:1000px">>
+content
+</div>
+
 <div id="contact">
 	<div class="flex-container">
 		<div class="flex-item">
@@ -109,10 +111,6 @@ Handmade ASCII art is how you make the world a better place.
 <footer>
 	<p>Website built from scratch with &lt;3 by Sidney Durant.</p>
 </footer>
-
-<div style="height:1000px">>
-contenejaskldfj;alksjdf;lkajsdf
-</div>
 
 </body>
 
