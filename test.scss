@@ -112,10 +112,35 @@ header{
 	.flex-item{
 		padding-left: 10px;
 		padding-right: 10px;
+		@media( max-width: $wide-breakpoint){
+			display: none;
+		}
 	}
 
 	.flex-container .flex-item:first-child{
 		flex-grow: 5;
+		@media (max-width: $wide-breakpoint){
+			text-align: center;
+			display: block;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+}
+
+#lowpolyme{
+	position: absolute;
+	top: 10px;
+	left: 13%;
+	z-index: 100;
+	background-image: url("lowpoly-me-lowres-saturated.png");
+	width: 250px;
+	height: 275px;
+	background-size: cover;
+	@media (max-width: $wide-breakpoint){
+		left: 0px;
+		right: 0px;
+		margin:auto;
 	}
 }
 
@@ -127,6 +152,11 @@ header{
 		margin: 0px auto;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	@media (max-width: $medium-breakpoint){
+		.flex-container{
+			flex-direction: column;
+		}
 	}
 }
 
@@ -151,8 +181,6 @@ header{
 	.flex-item{
 		width: 300px;
 		flex-grow: 0;
-		/*margin: 0px auto;
-		padding: 0px;*/
 	}
 
 	.picture{
@@ -162,12 +190,15 @@ header{
 		border-width: 3px;
 		border-color: $light-color;
 	}
+
+	@media (max-width: $medium-breakpoint){
+		.flex-container{
+			flex-direction: column;
+		}
+	}
 }
 
 @media (max-width: $medium-breakpoint){
-	.flex-container{
-		flex-direction: column;
-	}
 
 	#contact{
 		.flex-item{
@@ -181,14 +212,25 @@ header{
 	}
 }
 
-@mixin browser($browser-height){
-	$browser-width: $browser-height*16/9; 
+@mixin browser($browser-width){
+	$browser-height: $browser-width*10/16; 
 	#browser{
-
-		background-color: #dddddd;
+		margin:auto;
 		width: $browser-width;
 		height: $browser-height;
 		border-radius: $browser-width/100;
+		border-width: 1px;
+		border-color: #dddddd;
+		border-style: solid;
+
+		#browser-image{
+			background-image: url("selfieawareHome.png");
+			background-size: cover;
+			height: $browser-height*.9;
+			width: browser-width;
+			border-bottom-left-radius: $browser-width/100;
+			border-bottom-right-radius: $browser-width/100;
+		}
 
 		#browser-navbar{
 			background-color: #eeeeee;
@@ -282,8 +324,14 @@ header{
 	}
 }
 
-@include browser(400px);
+@include browser($medium-breakpoint);
 @media (max-width: $medium-breakpoint){
-	@include browser(200px);
+	@include browser($narrow-breakpoint);
 }
+@media (max-width: $narrow-breakpoint){
+	#browser{
+		display:none;
+	}
+}
+
 
