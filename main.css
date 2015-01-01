@@ -1,6 +1,14 @@
-/* the command to watch is: "sass --watch test.scss:test.css" */
+/*
+decrease intensity of bags under eyes
+
+decrease darkness of dark brown spot on forhead that is below my hairline
+
+adjust neck -> chest transition
+
+fix lines between polygons
+*/
 * {
-  font-family: 'Raleway', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Raleway', 'Helvetica', 'Helvetica Neue', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
   text-rendering: optimizeLegibility;
   padding: 0;
   margin: 0; }
@@ -21,14 +29,12 @@
 h3 {
   text-align: center;
   font-variant: small-caps;
-  font-family: "Raleway", "Lucida Sans Unicode", "Lucida Grande", Arial, Sans;
   font-weight: 600;
   font-size: 28px;
   line-height: 28px;
   padding-bottom: 32px; }
 
 p {
-  font-family: "Raleway", "Lucida Sans Unicode", "Lucida Grande", Arial, Sans;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -40,31 +46,59 @@ p {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  width: 80%;
   margin: auto; }
-  @media (max-width: 1024px) {
-    .flex-container #contact, #intro .flex-container {
-      width: 100%; } }
+  .flex-container #contact, #intro #header .flex-container {
+    width: 80%; }
+    @media (max-width: 1024px) {
+      .flex-container #contact, #intro #header .flex-container {
+        width: 100%; } }
+  #projects .flex-container {
+    flex-flow: row wrap; }
 
+/*.smallertext{
+	h1{
+		font-size: 32px !important;
+	}
+}*/
 #fixed-header {
   opacity: 0;
   position: fixed;
-  z-index: 2;
-  transition: box-shadow; }
+  z-index: 2; }
+  #fixed-header h1 {
+    font-size: 32px;
+    /*font-size: 48px;*/
+    /*transition: font-size .15s;*/ }
 
 #scrolling-header {
   padding-top: 280px; }
   #scrolling-header h1 {
     font-size: 48px; }
 
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 32px;
+  line-height: 64px; }
+
+#lowpolyme {
+  position: absolute;
+  top: 10px;
+  left: 13%;
+  z-index: 100;
+  background-image: url("images/lowpoly-lowres.png");
+  width: 250px;
+  height: 275px;
+  background-size: cover; }
+  @media (max-width: 1024px) {
+    #lowpolyme {
+      left: 0px;
+      right: 0px;
+      margin: auto; } }
+
 header {
   background-color: #298bee;
   width: 100%; }
   header h1, header h2 {
-    font-family: "Raleway", sans-serif;
-    font-weight: lighter;
-    font-size: 32px;
-    line-height: 64px;
     color: #ffffff; }
   header h2 {
     text-align: right; }
@@ -72,7 +106,8 @@ header {
       header h2 {
         display: none; } }
   header .flex-container {
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 80%; }
   header .flex-item {
     padding-left: 10px;
     padding-right: 10px; }
@@ -88,21 +123,6 @@ header {
         padding-left: 0px;
         padding-right: 0px; } }
 
-#lowpolyme {
-  position: absolute;
-  top: 10px;
-  left: 13%;
-  z-index: 100;
-  background-image: url("lowpoly-me-lowres-saturated.png");
-  width: 250px;
-  height: 275px;
-  background-size: cover; }
-  @media (max-width: 1024px) {
-    #lowpolyme {
-      left: 0px;
-      right: 0px;
-      margin: auto; } }
-
 #intro {
   padding-top: 24px; }
   #intro .flex-item {
@@ -111,13 +131,47 @@ header {
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px; }
-  @media (max-width: 512px) {
+  @media (max-width: 600px) {
     #intro .flex-container {
       flex-direction: column; } }
 
+#projects {
+  background: #f9f9f9;
+  padding-bottom: 48px; }
+  html.cssgradients #projects {
+    background: linear-gradient(to right, #fdfdfd, #f9f9f9, #fefefe, #f7f7f7); }
+  #projects h2 {
+    line-height: 32px;
+    padding-top: 48px;
+    text-align: center; }
+  #projects .display {
+    margin-top: 48px; }
+  #projects #display-image-text p {
+    color: #ffffff;
+    width: 70%;
+    margin: auto;
+    text-shadow: 0px 1px 2px #000000;
+    padding-bottom: 0px; }
+  #projects #display-image-text h3 {
+    color: #ffffff;
+    text-shadow: 0px 1px 2px #000000; }
+  #projects #sidneydurant-browser-image {
+    background-image: url("images/website-home.png"); }
+  #projects #selfieaware-browser-image {
+    background-image: url("images/selfieaware-home.png"); }
+  #projects #queueup-browser-image {
+    background-image: url("images/queueup-home.png"); }
+  #projects #spacetraders-window-image {
+    background-image: url("images/spacetraders-home.png"); }
+  #projects .flex-item {
+    flex-grow: 1; }
+
+#resume {
+  width: 100%;
+  height: 1000px; }
+
 #contact {
-  background-image: url("grey_tile.png");
-  background-repeat: repeat;
+  background-color: #3c3c3c;
   padding: 80px 20px 80px 20px; }
   #contact p {
     color: #ffffff;
@@ -131,50 +185,118 @@ header {
   #contact .flex-item {
     width: 300px;
     flex-grow: 0; }
-  #contact .picture {
-    width: 75%;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #ffffff; }
-  @media (max-width: 512px) {
+  @media (max-width: 600px) {
     #contact .flex-container {
       flex-direction: column; } }
 
-@media (max-width: 512px) {
+@media (max-width: 600px) {
   #contact .flex-item {
     width: 250px;
     margin: 0px auto;
     padding: 0px; }
   #contact p {
     text-align: center; } }
+#window {
+  margin: auto;
+  width: 600px;
+  height: 375px;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  border-style: solid; }
+  #window .window-image {
+    background-size: cover;
+    height: 337.5px;
+    width: 600px; }
+    #window .window-image #window-image-overlay {
+      background-color: #3c3c3c;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .5s; }
+    #window .window-image #window-image-overlay:hover {
+      opacity: .8; }
+    @media (max-width: 600px) {
+      #window .window-image #window-image-overlay {
+        display: none; } }
+    #window .window-image #display-image-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+  #window #window-navbar {
+    background-color: #eeeeee;
+    height: 37.5px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-shadow: 0 1px 1px #cccccc; }
+  #window .window-button {
+    width: 37.5px;
+    height: 37.5px;
+    float: right; }
+  #window #window-close div {
+    height: 0;
+    width: 0;
+    font-family: Raleway;
+    font-size: 37.5px;
+    color: #3c3c3c;
+    margin: auto; }
+  #window #window-title {
+    position: relative;
+    margin-left: 18.75px;
+    margin-top: 6.25px;
+    border-radius: 4.6875px;
+    float: left;
+    width: 337.5px;
+    height: 25px;
+    background-color: #fefefe;
+    box-shadow: 0 1px 0 #cccccc; }
+    #window #window-title p {
+      line-height: 0px;
+      margin-top: 12.5px;
+      font-size: 12.5px; }
+
 #browser {
   margin: auto;
-  width: 512px;
-  height: 320px;
-  border-radius: 5.12px;
+  width: 600px;
+  height: 375px;
+  border-radius: 6px;
   border-width: 1px;
-  border-color: #dddddd;
+  border-color: #d1d1d1;
   border-style: solid; }
-  #browser #browser-image {
-    background-image: url("selfieawareHome.png");
+  #browser .browser-image {
     background-size: cover;
-    height: 288px;
-    width: browser-width;
-    border-bottom-left-radius: 5.12px;
-    border-bottom-right-radius: 5.12px; }
+    height: 337.5px;
+    width: 600px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+    #browser .browser-image #browser-image-overlay {
+      background-color: #3c3c3c;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .5s;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
+    #browser .browser-image #browser-image-overlay:hover {
+      opacity: .8; }
+    @media (max-width: 600px) {
+      #browser .browser-image #browser-image-overlay {
+        display: none; } }
+    #browser .browser-image #display-image-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
   #browser #browser-navbar {
     background-color: #eeeeee;
-    height: 32px;
+    height: 37.5px;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     box-shadow: 0 1px 1px #cccccc; }
   #browser .browser-button {
-    margin-left: 8px;
-    margin-top: 10.66667px;
-    width: 10.66667px;
-    height: 10.66667px;
-    border-radius: 5.33333px;
+    margin-left: 9.375px;
+    margin-top: 12.5px;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 6.25px;
     float: left;
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1); }
   #browser #browser-close {
@@ -183,72 +305,89 @@ header {
     background-color: #f7bd15; }
   #browser #browser-min {
     background-color: #21ce29;
-    margin-right: 16px; }
+    margin-right: 18.75px; }
   #browser #browser-back {
-    margin-right: 4px; }
+    margin-right: 4.6875px; }
   #browser #browser-back, #browser #browser-forward {
-    margin-top: 5.33333px;
-    border-radius: 4px;
+    margin-top: 6.25px;
+    border-radius: 4.6875px;
     float: left;
-    width: 21.33333px;
-    height: 21.33333px;
+    width: 25px;
+    height: 25px;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
     #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
-      width: 12.8px;
-      height: 12.8px;
+      width: 15px;
+      height: 15px;
       position: relative;
-      top: 4px;
-      left: 4px;
-      border-top-left-radius: 12.8px;
-      border-bottom-right-radius: 1.6px;
-      border-top-right-radius: 1.6px;
-      border-bottom-left-radius: 1.6px; }
+      top: 4.6875px;
+      left: 4.6875px;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 1.875px;
+      border-top-right-radius: 1.875px;
+      border-bottom-left-radius: 1.875px; }
       #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
         position: relative;
-        border-top-left-radius: 12.8px;
-        top: -2px;
-        left: -2px;
-        width: 12.8px;
-        height: 12.8px;
+        border-top-left-radius: 15px;
+        top: -2.34375px;
+        left: -2.34375px;
+        width: 15px;
+        height: 15px;
         background-color: #fefefe; }
     #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
-      transform: translateX(2px) rotate(135deg);
+      transform: translateX(2.34375px) rotate(135deg);
       background-color: #999999; }
     #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
-      transform: translateX(-2px) rotate(-45deg);
+      transform: translateX(-2.34375px) rotate(-45deg);
       background-color: #cccccc; }
   #browser #browser-search {
     position: relative;
-    margin-left: 16px;
-    margin-top: 5.33333px;
-    border-radius: 4px;
+    margin-left: 18.75px;
+    margin-top: 6.25px;
+    border-radius: 4.6875px;
     float: left;
-    width: 288px;
-    height: 21.33333px;
+    width: 337.5px;
+    height: 25px;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
     #browser #browser-search p {
       line-height: 0px;
-      margin-top: 10.66667px;
-      font-size: 10.66667px; }
+      margin-top: 12.5px;
+      font-size: 12.5px; }
 
-@media (max-width: 512px) {
+@media (max-width: 600px) {
   #browser {
     margin: auto;
     width: 350px;
     height: 218.75px;
     border-radius: 3.5px;
     border-width: 1px;
-    border-color: #dddddd;
+    border-color: #d1d1d1;
     border-style: solid; }
-    #browser #browser-image {
-      background-image: url("selfieawareHome.png");
+    #browser .browser-image {
       background-size: cover;
       height: 196.875px;
-      width: browser-width;
+      width: 350px;
       border-bottom-left-radius: 3.5px;
       border-bottom-right-radius: 3.5px; }
+      #browser .browser-image #browser-image-overlay {
+        background-color: #3c3c3c;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .5s;
+        border-bottom-left-radius: 3.5px;
+        border-bottom-right-radius: 3.5px; }
+      #browser .browser-image #browser-image-overlay:hover {
+        opacity: .8; } }
+    @media (max-width: 600px) and (max-width: 600px) {
+      #browser .browser-image #browser-image-overlay {
+        display: none; } }
+@media (max-width: 600px) {
+      #browser .browser-image #display-image-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
     #browser #browser-navbar {
       background-color: #eeeeee;
       height: 21.875px;

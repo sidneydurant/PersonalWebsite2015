@@ -16,14 +16,15 @@ Handmade ASCII art is how you make the world a better place.
 <head>
 <title>Sidney Durant's portfolio!</title>
 <link rel="stylesheet" href="main.css">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>-->
 
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
 
-<script>
+<script type="text/javascript">
 
 	var updateHeader = function(){
         var fixedHeaderTop = $("#fixed-header").offset().top;
@@ -31,7 +32,7 @@ Handmade ASCII art is how you make the world a better place.
         var fixedHeaderBottom = fixedHeaderTop + $("#fixed-header").height();
         var scrollingHeaderBottom = $("#scrolling-header").outerHeight();
 
-    	$("#fixed-header").toggleClass( "opaque", fixedHeaderTop>=scrollingHeaderHeight );
+    	$("#fixed-header").toggleClass( "opaque smallertext", fixedHeaderTop>=scrollingHeaderHeight );
     	$("#scrolling-header").children().toggleClass( "transparent", fixedHeaderTop>=scrollingHeaderHeight );
     	$("#fixed-header").toggleClass( "shadowed", fixedHeaderBottom>=scrollingHeaderBottom);
     }
@@ -49,16 +50,16 @@ Handmade ASCII art is how you make the world a better place.
 <header id="fixed-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
-		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Projects </h2> </div>
+		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
 </header>
 <header id="scrolling-header">
 	<div class="flex-container">
 		<div class="flex-item"><h1> Sidney Durant </h1></div>
-		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Projects </h2> </div>
+		<div class="flex-item"><h2> Resume </h2> </div>
 		<div class="flex-item"><h2> Contact </h2> </div>
 	</div>
 </header>
@@ -70,11 +71,11 @@ Handmade ASCII art is how you make the world a better place.
 			<p>A sophomore at Georgia Insti&shy;tute of Technology, I love coding, hack&shy;athons and design. This is my portfolio and project showcase.</p>
 		</div>
 		<div class="flex-item">
-			<h3><div class="half">&frac12;</div> coder</h3>
+			<h3><div class="half">&frac23;</div> coder</h3>
 			<p>I know people won't use a product unless it solves a problem. That's why I build clean, functional code that does exactly what it needs to.</p>
 		</div>
 		<div class="flex-item">
-			<h3><div class="half">&frac12;</div> designer</h3>
+			<h3><div class="half">&frac13;</div> designer</h3>
 			<p>I know good code is wasted when user experience isn't up to par. I enjoy making simple, elegant designs that mini&shy;mize user friction.</p>
 		</div>
 		<!--
@@ -85,55 +86,152 @@ Handmade ASCII art is how you make the world a better place.
 	</div>
 </div>
 
-<div style="height:1000px">
+<div id="projects">
 
-<!-- rework so that browser is 16:10 and then inside is 16:9!
-add clickable back/forward buttons to see multiple screens -->
-<div id="browser">
-	<div id="browser-navbar">
-		<div id="browser-close" class="browser-button"></div>
-		<div id="browser-max" class="browser-button"></div>
-		<div id="browser-min" class="browser-button"></div>
-		<div id="browser-back">
-			<div id="browser-back-arrow">
-				<div id="browser-back-occluder"></div>
-			</div>
-		</div>
-		<div id="browser-forward">
-			<div id="browser-forward-arrow">
-				<div id="browser-forward-occluder"></div>
-			</div>
-		</div>
-		<div id="browser-search"><p>selfieaware.com</p></div>
-	</div>
-	<div id="browser-image">
-	</div>
-</div>
+	<!-- If you press the back/forward buttons you see the different images cycle through Also there is a link to the website (either on header or on the whole overlay or..?
 
-</div>
+	also switch to having all the projects in a flexbox and use a media query above large screen sizes to make it a grid of stuff (use row-wrap)
 
-<div id="contact">
+	also add tags next to browser that shows what the project used
+
+	and include github links for the projects (make 'git' tag clickable)
+
+	when someone clicks back arrow on browser, load new content. Learn php or ruby or some shit to do this
+
+	Also only load images for the virtual browsers AFTER page has otherwise fully loaded
+	-->
+
+	<h2>Projects</h2>
+
 	<div class="flex-container">
-		<div class="flex-item">
-			<center>
-				<img class="picture" src="headshot.png"/>
-			</center>
+	<div class="flex-item">
+		<div id="browser" class="display">
+			<div id="browser-navbar">
+				<div id="browser-close" class="browser-button"></div>
+				<div id="browser-max" class="browser-button"></div>
+				<div id="browser-min" class="browser-button"></div>
+				<div id="browser-back">
+					<div id="browser-back-arrow">
+						<div id="browser-back-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-forward">
+					<div id="browser-forward-arrow">
+						<div id="browser-forward-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-search"><p>sidneydurant.me</p></div>
+			</div>
+			<div  class="browser-image" id="sidneydurant-browser-image">
+				<div id="browser-image-overlay">
+					<div id="display-image-text">
+						<h3>this</h3>
+						<p>I built this website completely from scratch, without any frameworks, over the course of my 2014-2015 winter break. I used HTML5, CSS3, Javascript, JQuery, Sass, Autoprefixer, and Modernizr to build it. I also used Illustrator, and Photoshop to design and illustrate the content. It is fully responsive, and made to work well on all types of devices. I'm hosting it through a DigitalOcean server to ensure good performance, and am using Google analytics to track viewership. </p>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
 
-		<div class="flex-item">
-			<h3>
-				get in touch
-			</h3>
-
-			<p>
-				I'm glad you made it this far! Whether you have questions about my source code, want to give me a job, or just feel like saying hello, you can always reach out to me.
-			</p>
+	<div class="flex-item">
+		<div id="browser" class="display">
+			<div id="browser-navbar">
+				<div id="browser-close" class="browser-button"></div>
+				<div id="browser-max" class="browser-button"></div>
+				<div id="browser-min" class="browser-button"></div>
+				<div id="browser-back">
+					<div id="browser-back-arrow">
+						<div id="browser-back-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-forward">
+					<div id="browser-forward-arrow">
+						<div id="browser-forward-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-search"><p>selfieaware.com</p></div>
+			</div>
+			<div  class="browser-image" id="selfieaware-browser-image">
+				<div id="browser-image-overlay">
+					<div id="display-image-text">
+						<h3>selfieaware</h3>
+						<p>SelfieAware gives people selfiness scores based on the number of selfies on their Instagram feed. It was built using facial recognition software and the Instagram API by me and three friends during LAHacks. To use SelfieAware, all you have to do is login through Instagram, and then SelfieAware will automatically browse your recent Instagram pictures and give you a selfiness score based on the ratio of pictures of yourself vs pictures of nature/others.</p>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
+
+	<div class="flex-item">
+		<div id="browser" class="display">
+			<div id="browser-navbar">
+				<div id="browser-close" class="browser-button"></div>
+				<div id="browser-max" class="browser-button"></div>
+				<div id="browser-min" class="browser-button"></div>
+				<div id="browser-back">
+					<div id="browser-back-arrow">
+						<div id="browser-back-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-forward">
+					<div id="browser-forward-arrow">
+						<div id="browser-forward-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-search"><p>queueup.herokuapp.com</p></div>
+			</div>
+			<div class="browser-image" id="queueup-browser-image">
+				<div id="browser-image-overlay">
+					<div id="display-image-text">
+						<h3>queueup</h3>
+						<p>Queueup [q-up] is a party playlist maker. Built at MHacks in 36 hours by me and two friends, Queueup lets you add songs to a central Spotify playlist. If you throw an event, all you have to do is setup a new playlist in the Spotify client app, and then attendees can then simply enter the playlist code on the website to add music and upvote it. Go to the website and type in the code MHACKS to see the playlist we made at MHacks. Add music to it and it will show up in my Spotify!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex-item">
+		<div id="window" class="display">
+			<div id="window-navbar">
+				<div id="window-close" class="window-button"><div>&times;</div></div>
+				<div id="window-max" class="window-button"></div>
+				<div id="window-min" class="window-button"></div>
+				<div id="window-title"><p>space traders</p></div>
+			</div>
+			<div  class="window-image" id="spacetraders-window-image">
+				<div id="window-image-overlay">
+					<div id="display-image-text">
+						<h3>space traders</h3>
+						<p>I built Space traderz from scratch, without any frameworks, over the course of my 2014-2015 winter break. I used HTML5, CSS3, Javascript, JQuery, Sass, Autoprefixer, and Modernizr to build it. I also used Illustrator, and Photoshop to design and illustrate the content. It is fully responsive, and made to work well on all types of devices. I'm hosting it through a DigitalOcean server to ensure good performance, and am using Google analytics to track viewership. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 </div>
 
-<footer>
-	<p>Website built from scratch with &lt;3 by Sidney Durant.</p>
+<div id="resume">
+	<!-- add resume that slides in from bottom as you scroll (craig teel style) and looks like stephenc's resume website
+
+	also need an area with a total list of my skills
+
+	when I feel like getting fancy I should sort through things based on clicking on the individual skills (for example, it would only show the projects that used any of the skills selected) -->
+</div>
+
+<footer id="contact">
+	<h3>
+		get in touch
+	</h3>
+
+	<!-- add sexy autofill->label boxes for people to fill out to get in touch with me. -->
+
+	<!-- add "stalk me" and associated links -->
+
+	<p>
+		I'm glad you made it this far! Whether you have questions about my source code, want to give me a job, or just feel like saying hello, you can always reach out to me.
+	</p>
 </footer>
 
 </body>
