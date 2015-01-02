@@ -80,7 +80,7 @@ Handmade ASCII art is how you make the world a better place.
 		</div>
 		<!--
 		<div class="easter-egg">
-			<h2>And 100% obsessive.</h2>
+			<h3>And 100% obsessive.</h3>
 			<p>I like adding delightful details. Those small animations and things few will notice (or even see) are what make something feel polished.</p>
 		 -->
 	</div>
@@ -90,7 +90,13 @@ Handmade ASCII art is how you make the world a better place.
 
 	<!-- If you press the back/forward buttons you see the different images cycle through Also there is a link to the website (either on header or on the whole overlay or..?
 
-	also switch to having all the projects in a flexbox and use a media query above large screen sizes to make it a grid of stuff (use row-wrap)
+	have a load more button (?)
+
+	add particle systems and vision to projects list
+
+	add 3d rasterization to projects list.
+
+	add one of the physics simulations to projects list
 
 	also add tags next to browser that shows what the project used
 
@@ -101,7 +107,7 @@ Handmade ASCII art is how you make the world a better place.
 	Also only load images for the virtual browsers AFTER page has otherwise fully loaded
 	-->
 
-	<h2>Projects</h2>
+	<h2 class="section-header">Projects</h2>
 
 	<div class="flex-container">
 	<div class="flex-item">
@@ -127,6 +133,25 @@ Handmade ASCII art is how you make the world a better place.
 					<div id="display-image-text">
 						<h3>this</h3>
 						<p>I built this website completely from scratch, without any frameworks, over the course of my 2014-2015 winter break. I used HTML5, CSS3, Javascript, JQuery, Sass, Autoprefixer, and Modernizr to build it. I also used Illustrator, and Photoshop to design and illustrate the content. It is fully responsive, and made to work well on all types of devices. I'm hosting it through a DigitalOcean server to ensure good performance, and am using Google analytics to track viewership. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex-item">
+		<div id="window" class="display">
+			<div id="window-navbar">
+				<div id="window-close" class="window-button"><div>&times;</div></div>
+				<div id="window-max" class="window-button"><div>&square;</div></div>
+				<div id="window-min" class="window-button"><div>_</div></div>
+				<div id="window-title"><p>space traders</p></div>
+			</div>
+			<div  class="window-image" id="spacetraders-window-image">
+				<div id="window-image-overlay">
+					<div id="display-image-text">
+						<h3>space traders</h3>
+						<p>Space Traders was a Java project built for CS 2340 - the intro to objects and software design class at Georgia Tech. Me and five others collaborated on the project over the course of a semester. We used lots of design patterns and principles, ranging from dependancy injection to factory classes. For this project we also created JUnit tests and gradle build files. We also used SCRUM for agile development and learned to create UML diagrams for planning.</p>
 					</div>
 				</div>
 			</div>
@@ -191,28 +216,17 @@ Handmade ASCII art is how you make the world a better place.
 		</div>
 	</div>
 
-	<div class="flex-item">
-		<div id="window" class="display">
-			<div id="window-navbar">
-				<div id="window-close" class="window-button"><div>&times;</div></div>
-				<div id="window-max" class="window-button"></div>
-				<div id="window-min" class="window-button"></div>
-				<div id="window-title"><p>space traders</p></div>
-			</div>
-			<div  class="window-image" id="spacetraders-window-image">
-				<div id="window-image-overlay">
-					<div id="display-image-text">
-						<h3>space traders</h3>
-						<p>I built Space traderz from scratch, without any frameworks, over the course of my 2014-2015 winter break. I used HTML5, CSS3, Javascript, JQuery, Sass, Autoprefixer, and Modernizr to build it. I also used Illustrator, and Photoshop to design and illustrate the content. It is fully responsive, and made to work well on all types of devices. I'm hosting it through a DigitalOcean server to ensure good performance, and am using Google analytics to track viewership. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	</div>
 </div>
 
 <div id="resume">
+
+	<h2 class="section-header"> Resume </h2>
+
+	<p>
+
+	</p>
+
 	<!-- add resume that slides in from bottom as you scroll (craig teel style) and looks like stephenc's resume website
 
 	also need an area with a total list of my skills
