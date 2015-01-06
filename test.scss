@@ -1,14 +1,4 @@
 
-/*
-decrease intensity of bags under eyes
-
-decrease darkness of dark brown spot on forhead that is below my hairline
-
-adjust neck -> chest transition
-
-fix lines between polygons
-*/
-
 $primary-color: #298bee;
 $dark-color: #3c3c3c;
 $light-color: #ffffff;
@@ -27,6 +17,10 @@ $tall-breakpoint: 0px;
 	text-rendering: optimizeLegibility;
 	padding: 0;
 	margin: 0;
+}
+
+body{
+	min-width: 300px;
 }
 
 .half{
@@ -71,7 +65,6 @@ p{
 	margin: auto;
 
 	#contact, #intro #header &{
-		width: 80%;
 		@media (max-width: $wide-breakpoint){
 			width: 100%;
 		}
@@ -91,22 +84,28 @@ p{
 		/*font-size: 48px;*/
 		/*transition: font-size .15s;*/
 	}
+	@media (max-width: $wide-breakpoint){
+		display:none;
+	}
+	h1,h2{
+		font-size: 32px;
+	}
 }
 
 $topHeight: 280px;
 
 #scrolling-header{
 	padding-top: $topHeight;
-	h1{
-		font-size: 48px;
+	h2{
+		font-size: 32px;
 	}
 }
 
 h1, h2{
-		font-family: "Raleway", sans-serif;
-		font-weight: lighter;
-		font-size: 32px;
-		line-height: 64px;
+	font-family: "Raleway", sans-serif;
+	font-weight: lighter;
+	font-size: 48px;
+	line-height: 64px;
 }
 
 #lowpolyme{
@@ -114,7 +113,7 @@ h1, h2{
 	top: 10px;
 	left: 13%;
 	z-index: 100;
-	background-image: url("images/lowpoly-lowres.png");
+	background-image: url("images/lowpoly-lowres-lineless.png");
 	width: 250px;
 	height: 275px;
 	background-size: cover;
@@ -141,7 +140,7 @@ header{
 	}
 
 	.flex-container{
-		align-items: flex-start;
+		align-items: flex-end;
 		width: 80%;
 	}
 
@@ -165,17 +164,28 @@ header{
 }
 
 #intro{
-	padding-top: 24px;
+
+	.flex-container{
+		width: 90%;
+		margin: auto;
+	}
+
 	.flex-item{
 		width: 250px;
 		flex-grow: 0;
-		margin: 0px auto;
+		margin: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-top: 48px;
 	}
 	@media (max-width: $medium-breakpoint){
 		.flex-container{
 			flex-direction: column;
+		}
+	}
+	@media(max-width:$wide-breakpoint){
+		.flex-container{
+			width:100%;
 		}
 	}
 }
@@ -183,6 +193,7 @@ header{
 .section-header{
 	line-height: 32px;
 	padding-top: 48px;
+	padding-bottom: 48px;
 	text-align: center;
 }
 
@@ -192,7 +203,7 @@ header{
 		background: linear-gradient( to right, #fdfdfd, #f9f9f9, #fefefe, #f7f7f7);
 	}
 	.display{
-		margin-top: 48px;
+		margin-bottom: 48px;
 	}
 	#display-image-text{
 		p{
@@ -207,7 +218,6 @@ header{
 			text-shadow: 0px 1px 2px #000000;
 		}
 	}
-	padding-bottom: 48px;
 
 	#sidneydurant-browser-image{
 		background-image: url('images/website-home.png');
@@ -396,7 +406,7 @@ header{
 			margin-top: $browser-height/60;
 			border-radius: $browser-height/80;
 			float: left;
-			width: $browser-height*.9;
+			width: $browser-height*.8;
 			height: $browser-height/15;
 			background-color: #fefefe;
 			box-shadow: 0 1px 0 #cccccc;
@@ -511,6 +521,55 @@ header{
 	}
 }
 
+#resume{
+	hr{
+		clear:both;
+		margin-bottom: 48px;
+		opacity: 0;
+	}
+	.resume-row{
+		ul{
+			li{
+				padding-left: 24px;
+			}
+			li:nth-child(1){	
+				padding-left: 0px;
+				font-weight: bold;
+				float: left;
+			}
+			li:nth-child(2){
+				display: inline-block;
+				float: right;
+				font-style: italic;
+			}
+			li:nth-child(3){
+				clear:both;
+			}
+		}
+
+		.short-date{
+			display:none;
+		}
+		.long-date{
+			display: inline;
+		}
+
+		@media (max-width: $medium-breakpoint){
+			.long-date{
+				display: none;
+			}
+			.short-date{
+				display: inline;
+			}
+		}
+		@media(max-width: 400px){
+			.short-date{
+				display:none;
+			}
+		}
+	}
+}
+
 @mixin display($display-width){
 	@include browser($display-width);
 	@include window($display-width);
@@ -519,9 +578,10 @@ header{
 @include display($medium-breakpoint);
 @media (max-width: $medium-breakpoint){
 	@include display($narrow-breakpoint);
+	@include display($min-width);
 }
 @media (max-width: $narrow-breakpoint){
-	@include display($min-width);
+
 }
 @media (max-width: $min-width){
 	.display{
