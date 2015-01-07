@@ -244,7 +244,6 @@ header{
 		background-image: url('images/rasterization-home.gif');
 	}
 
-
 	.flex-item{
 		flex-grow: 1;
 	}
@@ -337,6 +336,9 @@ header{
 				position: relative;
 				top: 50%;
 				transform: translateY(-50%);
+				p{
+					text-align: justify;
+				}
 			}
 
 		}
@@ -467,6 +469,9 @@ header{
 				position: relative;
 				top: 50%;
 				transform: translateY(-50%);
+				p{
+					text-align: justify;
+				}
 			}
 
 		}

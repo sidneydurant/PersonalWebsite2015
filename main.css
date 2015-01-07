@@ -261,6 +261,8 @@ header {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
+      #browser .browser-image #display-image-text p {
+        text-align: justify; }
   #browser #browser-navbar {
     background-color: #eeeeee;
     height: 37.5px;
@@ -357,6 +359,8 @@ header {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
+      #window .window-image #display-image-text p {
+        text-align: justify; }
   #window #window-navbar {
     /*background-color: #eeeeee;*/
     background-color: #c6e8fc;
@@ -435,6 +439,8 @@ header {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+        #browser .browser-image #display-image-text p {
+          text-align: justify; }
     #browser #browser-navbar {
       background-color: #eeeeee;
       height: 21.875px;
@@ -532,6 +538,8 @@ header {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+        #window .window-image #display-image-text p {
+          text-align: justify; }
     #window #window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
@@ -609,6 +617,8 @@ header {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+        #browser .browser-image #display-image-text p {
+          text-align: justify; }
     #browser #browser-navbar {
       background-color: #eeeeee;
       height: 18.125px;
@@ -706,6 +716,8 @@ header {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+        #window .window-image #display-image-text p {
+          text-align: justify; }
     #window #window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
