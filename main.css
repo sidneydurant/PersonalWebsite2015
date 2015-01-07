@@ -125,13 +125,14 @@ header {
 #intro .flex-item {
   width: 250px;
   flex-grow: 0;
-  margin: 0px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 48px; }
 @media (max-width: 600px) {
   #intro .flex-container {
-    flex-direction: column; } }
+    flex-direction: column; }
+  #intro .flex-item {
+    margin: 0px auto; } }
 @media (max-width: 1024px) {
   #intro .flex-container {
     width: 100%; } }
@@ -187,12 +188,6 @@ header {
     opacity: .87;
     text-align: left;
     margin-top: 0px; }
-  #contact .flex-item {
-    width: 300px;
-    flex-grow: 0; }
-  @media (max-width: 600px) {
-    #contact .flex-container {
-      flex-direction: column; } }
 
 @media (max-width: 600px) {
   #contact .flex-item {

@@ -179,7 +179,6 @@ header{
 	.flex-item{
 		width: 250px;
 		flex-grow: 0;
-		margin: 0px;
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-top: 48px;
@@ -187,6 +186,9 @@ header{
 	@media (max-width: $medium-breakpoint){
 		.flex-container{
 			flex-direction: column;
+		}
+		.flex-item{
+			margin: 0px auto;
 		}
 	}
 	@media(max-width:$wide-breakpoint){
@@ -271,16 +273,6 @@ header{
 		margin-top: 0px;
 	}
 
-	.flex-item{
-		width: 300px;
-		flex-grow: 0;
-	}
-
-	@media (max-width: $medium-breakpoint){
-		.flex-container{
-			flex-direction: column;
-		}
-	}
 }
 
 @media (max-width: $medium-breakpoint){
