@@ -90,6 +90,9 @@ p{
 	h1,h2{
 		font-size: 32px;
 	}
+	h1:hover,h2:hover{
+		cursor:pointer;
+	}
 }
 
 $topHeight: 280px;
@@ -98,6 +101,9 @@ $topHeight: 280px;
 	padding-top: $topHeight;
 	h2{
 		font-size: 32px;
+	}
+	h1:hover,h2:hover{
+		cursor:pointer;
 	}
 }
 
@@ -231,6 +237,13 @@ header{
 	#spacetraders-window-image{
 		background-image: url('images/spacetraders-home.png');
 	}
+	#fabric-window-image{
+		background-image: url('images/fabric-home.gif');
+	}
+	#rasterization-window-image{
+		background-image: url('images/rasterization-home.gif');
+	}
+
 
 	.flex-item{
 		flex-grow: 1;

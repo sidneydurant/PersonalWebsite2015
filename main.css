@@ -60,11 +60,15 @@ p {
       display: none; } }
   #fixed-header h1, #fixed-header h2 {
     font-size: 32px; }
+  #fixed-header h1:hover, #fixed-header h2:hover {
+    cursor: pointer; }
 
 #scrolling-header {
   padding-top: 280px; }
   #scrolling-header h2 {
     font-size: 32px; }
+  #scrolling-header h1:hover, #scrolling-header h2:hover {
+    cursor: pointer; }
 
 h1, h2 {
   font-family: "Raleway", sans-serif;
@@ -161,6 +165,10 @@ header {
     background-image: url("images/queueup-home.png"); }
   #projects #spacetraders-window-image {
     background-image: url("images/spacetraders-home.png"); }
+  #projects #fabric-window-image {
+    background-image: url("images/fabric-home.gif"); }
+  #projects #rasterization-window-image {
+    background-image: url("images/rasterization-home.gif"); }
   #projects .flex-item {
     flex-grow: 1; }
 
