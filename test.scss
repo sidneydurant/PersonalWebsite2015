@@ -49,9 +49,12 @@ h3{
 	padding-bottom: 32px;
 }
 
+$fontsize: 14px;
+$lineheight: $fontsize*1.5;
+
 p{
-	font-size: 14px;
-	line-height: 21px;
+	font-size: $fontsize;
+	line-height: $lineheight;
 	text-align: center;
 	color: #000000;
 	opacity: .87;
@@ -495,6 +498,11 @@ header{
 			width: $window-height/12;
 			height: $window-height/20;
 			float: right;
+			cursor:default;
+		}
+
+		.window-button:hover{
+			cursor:default;
 		}
 
 		#window-close{
@@ -551,22 +559,55 @@ header{
 		margin-bottom: 48px;
 		opacity: 0;
 	}
+
+	h3{
+		text-align:left;
+	}
+
+	width: 80%;
+	max-width: 800px;
+	margin: 0px auto;
+
+	$indentation: 24px;
+
+	@media (max-width: $medium-breakpoint){
+		width:auto;
+		margin-left: $indentation;
+		margin-right: $indentation;
+	}
+
 	.resume-row{
 		ul{
+
+			padding-bottom: $indentation;
+
 			li{
-				padding-left: 24px;
+				text-indent: -$indentation;
+				padding-left: $indentation;
+				margin-left: 2*$indentation;
+				font-size: $fontsize;
+				line-height: $lineheight;
 			}
-			li:nth-child(1){	
-				padding-left: 0px;
+			li:nth-child(1){
+				padding-left: 0;
 				font-weight: bold;
 				float: left;
+				display:inline;
 			}
 			li:nth-child(2){
-				display: inline-block;
+				display: inline;
 				float: right;
 				font-style: italic;
 			}
+
 			li:nth-child(3){
+				padding-left: 0;
+				font-weight: bold;
+				float: left;
+				display:inline;
+				clear:both;
+			}
+			li:nth-child(4){
 				clear:both;
 			}
 		}

@@ -200,34 +200,58 @@ header {
     padding: 0px; }
   #contact p {
     text-align: center; } }
-#resume hr {
-  clear: both;
-  margin-bottom: 48px;
-  opacity: 0; }
-#resume .resume-row ul li {
-  padding-left: 24px; }
-#resume .resume-row ul li:nth-child(1) {
-  padding-left: 0px;
-  font-weight: bold;
-  float: left; }
-#resume .resume-row ul li:nth-child(2) {
-  display: inline-block;
-  float: right;
-  font-style: italic; }
-#resume .resume-row ul li:nth-child(3) {
-  clear: both; }
-#resume .resume-row .short-date {
-  display: none; }
-#resume .resume-row .long-date {
-  display: inline; }
-@media (max-width: 600px) {
-  #resume .resume-row .long-date {
+#resume {
+  width: 80%;
+  max-width: 800px;
+  margin: 0px auto; }
+  #resume hr {
+    clear: both;
+    margin-bottom: 48px;
+    opacity: 0; }
+  #resume h3 {
+    text-align: left; }
+  @media (max-width: 600px) {
+    #resume {
+      width: auto;
+      margin-left: 24px;
+      margin-right: 24px; } }
+  #resume .resume-row ul {
+    padding-bottom: 24px; }
+    #resume .resume-row ul li {
+      text-indent: -24px;
+      padding-left: 24px;
+      margin-left: 48px;
+      font-size: 14px;
+      line-height: 21px; }
+    #resume .resume-row ul li:nth-child(1) {
+      padding-left: 0;
+      font-weight: bold;
+      float: left;
+      display: inline; }
+    #resume .resume-row ul li:nth-child(2) {
+      display: inline;
+      float: right;
+      font-style: italic; }
+    #resume .resume-row ul li:nth-child(3) {
+      padding-left: 0;
+      font-weight: bold;
+      float: left;
+      display: inline;
+      clear: both; }
+    #resume .resume-row ul li:nth-child(4) {
+      clear: both; }
+  #resume .resume-row .short-date {
     display: none; }
-  #resume .resume-row .short-date {
-    display: inline; } }
-@media (max-width: 400px) {
-  #resume .resume-row .short-date {
-    display: none; } }
+  #resume .resume-row .long-date {
+    display: inline; }
+  @media (max-width: 600px) {
+    #resume .resume-row .long-date {
+      display: none; }
+    #resume .resume-row .short-date {
+      display: inline; } }
+  @media (max-width: 400px) {
+    #resume .resume-row .short-date {
+      display: none; } }
 
 #browser {
   margin: auto;
@@ -376,7 +400,10 @@ header {
   #window .window-button {
     width: 31.25px;
     height: 18.75px;
-    float: right; }
+    float: right;
+    cursor: default; }
+  #window .window-button:hover {
+    cursor: default; }
   #window #window-close div {
     line-height: 34.09091px;
     font-family: Raleway;
@@ -561,7 +588,10 @@ header {
     #window .window-button {
       width: 18.22917px;
       height: 10.9375px;
-      float: right; }
+      float: right;
+      cursor: default; }
+    #window .window-button:hover {
+      cursor: default; }
     #window #window-close div {
       line-height: 19.88636px;
       font-family: Raleway;
@@ -745,7 +775,10 @@ header {
     #window .window-button {
       width: 15.10417px;
       height: 9.0625px;
-      float: right; }
+      float: right;
+      cursor: default; }
+    #window .window-button:hover {
+      cursor: default; }
     #window #window-close div {
       line-height: 16.47727px;
       font-family: Raleway;
