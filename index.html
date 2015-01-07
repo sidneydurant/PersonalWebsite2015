@@ -143,26 +143,24 @@ Handmade ASCII art is how you make the world a better place.
 
 	<div class="flex-container">
 
-
 	<div class="flex-item">
 		<div id="window" class="display">
 			<div id="window-navbar">
 				<div id="window-close" class="window-button"><div>&times;</div></div>
 				<div id="window-max" class="window-button"><div>&square;</div></div>
 				<div id="window-min" class="window-button"><div>_</div></div>
-				<div id="window-title"><p>space traders</p></div>
+				<div id="window-title"><p>3D rasterization</p></div>
 			</div>
-			<div  class="window-image" id="spacetraders-window-image">
+			<div  class="window-image" id="rasterization-window-image">
 				<div id="window-image-overlay">
 					<div id="display-image-text">
-						<h3>space traders</h3>
-						<p>Space Traders was a Java project built for CS 2340 - the intro to objects and software design class at Georgia Tech. Me and five others collaborated on the project over the course of a semester. We used lots of design patterns and principles, ranging from dependancy injection to factory classes. For this project we also created JUnit tests and gradle build files. We also used SCRUM for agile development and learned to create UML diagrams for planning.</p>
+						<h3>3d rasterization</h3>
+						<p>My 3d rasterization engine was a Java project built for CS 1332 - the intro to data structures and algorithm class at Georgia Tech. I built the project in 2 weeks, using only the core java libraries. I implemented a software rasterization algorithm that takes a triangle defined by three colored input points and then draws it on a given raster image (producing a z-buffer for proper culling in the process). I then built 3d shape models and the code to scale, rotate, and translate them in the scene. </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<div class="flex-item">
 		<div id="browser" class="display">
@@ -187,6 +185,36 @@ Handmade ASCII art is how you make the world a better place.
 					<div id="display-image-text">
 						<h3>this</h3>
 						<p>I built this website completely from scratch, without any frameworks, over the course of my 2014-2015 winter break. I used HTML5, CSS3, Javascript, JQuery, Sass, Autoprefixer, and Modernizr to build it. I also used Illustrator, and Photoshop to design and illustrate the content. It is fully responsive, and made to work well on all types of devices. I'm hosting it through a DigitalOcean server to ensure good performance, and am using Google analytics to track viewership. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="flex-item">
+		<div id="browser" class="display">
+			<div id="browser-navbar">
+				<div id="browser-close" class="browser-button"></div>
+				<div id="browser-max" class="browser-button"></div>
+				<div id="browser-min" class="browser-button"></div>
+				<div id="browser-back">
+					<div id="browser-back-arrow">
+						<div id="browser-back-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-forward">
+					<div id="browser-forward-arrow">
+						<div id="browser-forward-occluder"></div>
+					</div>
+				</div>
+				<div id="browser-search"><p>selfieaware.com</p></div>
+			</div>
+			<div  class="browser-image" id="selfieaware-browser-image">
+				<div id="browser-image-overlay">
+					<div id="display-image-text">
+						<h3>selfieaware</h3>
+						<p>SelfieAware gives people selfiness scores based on the number of selfies on their Instagram feed. It was built using facial recognition software and the Instagram API by me and three friends during LAHacks. To use SelfieAware, all you have to do is login through Instagram, and then SelfieAware will automatically browse your recent Instagram pictures and give you a selfiness score based on the ratio of pictures of yourself vs pictures of nature/others.</p>
 					</div>
 				</div>
 			</div>
@@ -228,35 +256,6 @@ Handmade ASCII art is how you make the world a better place.
 						<div id="browser-forward-occluder"></div>
 					</div>
 				</div>
-				<div id="browser-search"><p>selfieaware.com</p></div>
-			</div>
-			<div  class="browser-image" id="selfieaware-browser-image">
-				<div id="browser-image-overlay">
-					<div id="display-image-text">
-						<h3>selfieaware</h3>
-						<p>SelfieAware gives people selfiness scores based on the number of selfies on their Instagram feed. It was built using facial recognition software and the Instagram API by me and three friends during LAHacks. To use SelfieAware, all you have to do is login through Instagram, and then SelfieAware will automatically browse your recent Instagram pictures and give you a selfiness score based on the ratio of pictures of yourself vs pictures of nature/others.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="flex-item">
-		<div id="browser" class="display">
-			<div id="browser-navbar">
-				<div id="browser-close" class="browser-button"></div>
-				<div id="browser-max" class="browser-button"></div>
-				<div id="browser-min" class="browser-button"></div>
-				<div id="browser-back">
-					<div id="browser-back-arrow">
-						<div id="browser-back-occluder"></div>
-					</div>
-				</div>
-				<div id="browser-forward">
-					<div id="browser-forward-arrow">
-						<div id="browser-forward-occluder"></div>
-					</div>
-				</div>
 				<div id="browser-search"><p>queueup.herokuapp.com</p></div>
 			</div>
 			<div class="browser-image" id="queueup-browser-image">
@@ -270,6 +269,24 @@ Handmade ASCII art is how you make the world a better place.
 		</div>
 	</div>
 
+	<div class="flex-item">
+		<div id="window" class="display">
+			<div id="window-navbar">
+				<div id="window-close" class="window-button"><div>&times;</div></div>
+				<div id="window-max" class="window-button"><div>&square;</div></div>
+				<div id="window-min" class="window-button"><div>_</div></div>
+				<div id="window-title"><p>space traders</p></div>
+			</div>
+			<div  class="window-image" id="spacetraders-window-image">
+				<div id="window-image-overlay">
+					<div id="display-image-text">
+						<h3>space traders</h3>
+						<p>Space Traders was a Java project built for CS 2340 - the intro to objects and software design class at Georgia Tech. Me and five others collaborated on the project over the course of a semester. We used lots of design patterns and principles, ranging from dependancy injection to factory classes. For this project we also created JUnit tests and gradle build files. We also used SCRUM for agile development and learned to create UML diagrams for planning. This was an ambitious project with over 13,000 lines of code.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="flex-item">
 		<div id="window" class="display">
@@ -277,13 +294,32 @@ Handmade ASCII art is how you make the world a better place.
 				<div id="window-close" class="window-button"><div>&times;</div></div>
 				<div id="window-max" class="window-button"><div>&square;</div></div>
 				<div id="window-min" class="window-button"><div>_</div></div>
-				<div id="window-title"><p>3D rasterization</p></div>
+				<div id="window-title"><p>particle pathfinding</p></div>
 			</div>
-			<div  class="window-image" id="rasterization-window-image">
+			<div  class="window-image" id="pathfinding-window-image">
 				<div id="window-image-overlay">
 					<div id="display-image-text">
-						<h3>3d rasterization</h3>
-						<p>My 3d rasterization engine was a Java project built for CS 1332 - the intro to data structures and algorithm class at Georgia Tech. I built the project in 2 weeks, using only the core java libraries. I implemented a software rasterization algorithm that takes a triangle defined by three colored input points and then draws it on a given raster image (producing a z-buffer for proper culling in the process). I then built 3d shape models and the code to scale, rotate, and translate them in the scene. </p>
+						<h3>particle pathfinding</h3>
+						<p>This was a personal project in which I developed a pathfinding algorithm for particles. It uses my own software rendering algorithm for the particles alongside a wavefront expansion algorithm I developed for the pathfinding, both implemented in Java. The pathfinding algorithm was optimized to work with many pathfinders, with over 20k particles pathfinding to the goal node in this screenshot. Check out the <a href="http://gamedevelopment.tutsplus.com/tutorials/understanding-goal-based-vector-field-pathfinding--gamedev-9007">accompanying article</a> to better understand the algorithm.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex-item">
+		<div id="window" class="display">
+			<div id="window-navbar">
+				<div id="window-close" class="window-button"><div>&times;</div></div>
+				<div id="window-max" class="window-button"><div>&square;</div></div>
+				<div id="window-min" class="window-button"><div>_</div></div>
+				<div id="window-title"><p>particle rendering</p></div>
+			</div>
+			<div  class="window-image" id="particles-window-image">
+				<div id="window-image-overlay">
+					<div id="display-image-text">
+						<h3>particle rendering</h3>
+						<p>This was a personal project I built as a senior in high school that demonstrates normal mapping and bit hacking for use in software rendering. As you can see, the blocks in the scene are normal mapped, with directional light affecting them appropriately. It's also important to note that I use hacky per-particle lighting, and I built both the particle system and rendering in Java. The final product can handle hundreds of thousands of light-emitting particles.</p>
 					</div>
 				</div>
 			</div>

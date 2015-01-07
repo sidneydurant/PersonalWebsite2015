@@ -170,6 +170,10 @@ header {
     background-image: url("images/fabric-home.gif"); }
   #projects #rasterization-window-image {
     background-image: url("images/rasterization-home.gif"); }
+  #projects #pathfinding-window-image {
+    background-image: url("images/pathfinding-home.png"); }
+  #projects #particles-window-image {
+    background-image: url("images/particles-home.png"); }
   #projects .flex-item {
     flex-grow: 1; }
 
@@ -258,6 +262,9 @@ header {
       transform: translateY(-50%); }
       #browser .browser-image #display-image-text p {
         text-align: justify; }
+      #browser .browser-image #display-image-text a {
+        color: #298bee;
+        text-decoration: none; }
   #browser #browser-navbar {
     background-color: #eeeeee;
     height: 37.5px;
@@ -356,6 +363,9 @@ header {
       transform: translateY(-50%); }
       #window .window-image #display-image-text p {
         text-align: justify; }
+      #window .window-image #display-image-text a {
+        color: #298bee;
+        text-decoration: none; }
   #window #window-navbar {
     /*background-color: #eeeeee;*/
     background-color: #c6e8fc;
@@ -436,6 +446,9 @@ header {
         transform: translateY(-50%); }
         #browser .browser-image #display-image-text p {
           text-align: justify; }
+        #browser .browser-image #display-image-text a {
+          color: #298bee;
+          text-decoration: none; }
     #browser #browser-navbar {
       background-color: #eeeeee;
       height: 21.875px;
@@ -535,6 +548,9 @@ header {
         transform: translateY(-50%); }
         #window .window-image #display-image-text p {
           text-align: justify; }
+        #window .window-image #display-image-text a {
+          color: #298bee;
+          text-decoration: none; }
     #window #window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
@@ -614,6 +630,9 @@ header {
         transform: translateY(-50%); }
         #browser .browser-image #display-image-text p {
           text-align: justify; }
+        #browser .browser-image #display-image-text a {
+          color: #298bee;
+          text-decoration: none; }
     #browser #browser-navbar {
       background-color: #eeeeee;
       height: 18.125px;
@@ -713,6 +732,9 @@ header {
         transform: translateY(-50%); }
         #window .window-image #display-image-text p {
           text-align: justify; }
+        #window .window-image #display-image-text a {
+          color: #298bee;
+          text-decoration: none; }
     #window #window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;

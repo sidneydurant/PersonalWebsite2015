@@ -245,6 +245,12 @@ header{
 	#rasterization-window-image{
 		background-image: url('images/rasterization-home.gif');
 	}
+	#pathfinding-window-image{
+		background-image:url('images/pathfinding-home.png');
+	}
+	#particles-window-image{
+		background-image: url('images/particles-home.png');
+	}
 
 	.flex-item{
 		flex-grow: 1;
@@ -330,6 +336,10 @@ header{
 				transform: translateY(-50%);
 				p{
 					text-align: justify;
+				}
+				a{
+					color: $primary-color;
+					text-decoration: none;
 				}
 			}
 
@@ -463,6 +473,10 @@ header{
 				transform: translateY(-50%);
 				p{
 					text-align: justify;
+				}
+				a{
+					color: $primary-color;
+					text-decoration: none;
 				}
 			}
 
