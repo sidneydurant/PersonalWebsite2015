@@ -16,13 +16,32 @@ Handmade ASCII art is how you make the world a better place.
 <head>
 <title>Sidney Durant's portfolio!</title>
 <link rel="stylesheet" href="main.css">
-<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>-->
+
+<script src="https://fontastic.s3.amazonaws.com/vdeGPPdbYAcVuEKxn9yBS8/icons.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>-->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
 
-<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src= "js/typed.js" type="text/javascript"></script>
+
+<!--<script src="js/jquery.min.js" type="text/javascript"></script>-->
 <script src="js/modernizr.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		$(".typed-text").typed({
+			strings: ["artificial intelligence.","front end development.","back end development.","virtual reality."],
+			typeSpeed:0,
+			loop:true,
+			loopCount:false,
+			backDelay: 750
+		});
+	});
+
+</script>
 
 <script type="text/javascript">
 
@@ -227,13 +246,13 @@ Handmade ASCII art is how you make the world a better place.
 				<div id="window-close" class="window-button"><div>&times;</div></div>
 				<div id="window-max" class="window-button"><div>&square;</div></div>
 				<div id="window-min" class="window-button"><div>_</div></div>
-				<div id="window-title"><p>fabric simulation</p></div>
+				<div id="window-title"><p>particle pathfinding</p></div>
 			</div>
-			<div  class="window-image" id="fabric-window-image">
+			<div  class="window-image" id="pathfinding-window-image">
 				<div id="window-image-overlay">
 					<div id="display-image-text">
-						<h3>fabric simulation</h3>
-						<p>This fabric simulation was a personal project built in fall 2013. It was built in Java using the core Java libraries. To simulate the fabric the program builds an interconnected point mass system, and then simulates the movement of each point mass in discrete timesteps. The final result is interactive - the user's mouse modifies the velocity of nearby point-masses.</p>
+						<h3>particle pathfinding</h3>
+						<p>This was a personal project in which I developed a pathfinding algorithm for particles. It uses my own software rendering engine for the particles alongside a wavefront expansion algorithm I developed for the pathfinding, both implemented in Java. The pathfinding algorithm was optimized to work with many pathfinders, with over 20k particles pathfinding to the goal node in this screenshot. Check out the <a href="http://gamedevelopment.tutsplus.com/tutorials/understanding-goal-based-vector-field-pathfinding--gamedev-9007">accompanying article</a> to better understand the algorithm.</p>
 					</div>
 				</div>
 			</div>
@@ -294,13 +313,13 @@ Handmade ASCII art is how you make the world a better place.
 				<div id="window-close" class="window-button"><div>&times;</div></div>
 				<div id="window-max" class="window-button"><div>&square;</div></div>
 				<div id="window-min" class="window-button"><div>_</div></div>
-				<div id="window-title"><p>particle pathfinding</p></div>
+				<div id="window-title"><p>fabric simulation</p></div>
 			</div>
-			<div  class="window-image" id="pathfinding-window-image">
+			<div  class="window-image" id="fabric-window-image">
 				<div id="window-image-overlay">
 					<div id="display-image-text">
-						<h3>particle pathfinding</h3>
-						<p>This was a personal project in which I developed a pathfinding algorithm for particles. It uses my own software rendering algorithm for the particles alongside a wavefront expansion algorithm I developed for the pathfinding, both implemented in Java. The pathfinding algorithm was optimized to work with many pathfinders, with over 20k particles pathfinding to the goal node in this screenshot. Check out the <a href="http://gamedevelopment.tutsplus.com/tutorials/understanding-goal-based-vector-field-pathfinding--gamedev-9007">accompanying article</a> to better understand the algorithm.</p>
+						<h3>fabric simulation</h3>
+						<p>This fabric simulation was a personal project built in fall 2013. It was built in Java using the core Java libraries. To simulate the fabric the program builds an interconnected point mass system, and then simulates the movement of each point mass in discrete timesteps. The final result is interactive - I let the user's mouse modifies the velocity of nearby point-masses.</p>
 					</div>
 				</div>
 			</div>
@@ -319,7 +338,7 @@ Handmade ASCII art is how you make the world a better place.
 				<div id="window-image-overlay">
 					<div id="display-image-text">
 						<h3>particle rendering</h3>
-						<p>This was a personal project I built as a senior in high school that demonstrates normal mapping and bit hacking for use in software rendering. As you can see, the blocks in the scene are normal mapped, with directional light affecting them appropriately. It's also important to note that I use hacky per-particle lighting, and I built both the particle system and rendering in Java. The final p can handle hundreds of thousands of light-emitting particles.</p>
+						<p>This was a personal project I built as a senior in high school that demonstrates normal mapping and bit hacking for use in software rendering. As you can see, the blocks in the scene are normal mapped, with directional light affecting them appropriately. It's also important to note that I use hacky per-particle lighting, and I built both the particle system and rendering in Java. The finished program can handle hundreds of thousands of light-emitting particles.</p>
 					</div>
 				</div>
 			</div>
@@ -342,12 +361,13 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">08/13 ~ 05/17</span>
 			</li>
 			<li>B.S. Computer Science</li>
+			<hr>
 			<li>Artificial Intelligence and Devices concentration</li>
 			<li>Honors program member</li>
 			<li>Current cumulative GPA: 3.43</li>
 			<li>In major GPA: 4.0</li>
 		</ul>
-		<hr>
+		<hr><hr>
 	</div>
 
 
@@ -360,10 +380,11 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">5/14 ~ 8/14</span>
 			</li>
 			<li>Computer Vision Engineer</li>
+			<hr>
 			</li>
-			<li>Developed a computer vision sorting system from the ground up to sort good and bad produce into different conveyor belts</li>
-			<li>Interfaced Digital I/O boards to an external linear camera for data collection, and to a series of pneumatic valves to sort produce with millisecond accuracy</li>
+			<p>Developed a computer vision sorting system from the ground up to sort good and bad produce into different conveyor belts. Interfaced Digital I/O boards to an external linear camera for data collection, and to a series of pneumatic valves to sort produce with millisecond accuracy.</p>
 		</ul>
+		<hr>
 		<ul>
 			<li>Envato</li>
 			<li>
@@ -371,10 +392,10 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">8/13 ~ 8/13</span>
 			</li>
 			<li>Contributer</li>
-			<li>Wrote a programming tutorial explaining how to implement "Goal Based Vector Field Pathfinding"</li>
-			<li>Researched and coded a pathfinding algorithm optimized for use with tens of thousands of particles</li>
+			<hr>
+			<p>Wrote a programming tutorial explaining how to implement "Goal Based Vector Field Pathfinding". Researched and coded a pathfinding algorithm optimized for use with tens of thousands of particles.</p>
 		</ul>
-		<hr>
+		<hr><hr>
 	</div>
 
 
@@ -384,22 +405,26 @@ Handmade ASCII art is how you make the world a better place.
 			<li>Languages</li>
 			<li></li>
 			<li></li>
+			<hr>
 			<li>Java, Javascript, C, JQuery, ARM assembly, CSS3, SASS, HTML5, LabView, Python, FXML</li>
 		</ul>
+		<hr>
 		<ul>
 			<li>Tools and Frameworks</li>
 			<li></li>
 			<li></li>
+			<hr>
 			<li>Git, Autoprefixer, Modernizr, Grunt, Photoshop, Illustrator, Digital Ocean, Google Analytics, JUnit, UML, Netbeans, Windows, Linux, Android Development</li>
 		</ul>
+		<hr>
 		<ul>
 			<li>Professional</li>
 			<li></li>
 			<li></li>
-			<li>Earnest curiosity and a strong desire to learn new skills as indicated by side projects and hackathon participation</li>
-			<li>Effective communicator and leader as demonstrated by HackGT involvement</li>
+			<hr>
+			<p>I am earnestly curious and am driven by a strong desire to learn new skills as indicated by my side projects and hackathon participation. In addition I am an effective communicator and leader as demonstrated by HackGT involvement and status as an Eagle scout.</li>
 		</ul>
-		<hr>
+		<hr><hr>
 	</div>
 
 
@@ -412,10 +437,12 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">2/14 - now</span>
 			</li>
 			<li>Director of Operations</li>
+			<hr>
 			<li>Helped raise $250,000+ to run Georgia Tech's first national scale hackathon</li>
-			<li>Organized logistics as a key piece of the operations team to prepare for the 800 person event</li>
+			<li>Organized logistics as a key member of the operations team to prepare for the 800 person event</li>
 			<li>Won most valuable organizer award, courtesy of Major League Hacking</li>
 		</ul>
+		<hr>
 		<ul>
 			<li>Samplify</li>
 			<li>
@@ -423,8 +450,10 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">1/14</span>
 			</li>
 			<li>App developer</li>
+			<hr>
 			<li>Helped flesh out a hackathon-born Android app that was downloaded 8,000+ times in 5 days before being taken down</li>
 		</ul>
+		<hr>
 		<ul>
 			<li>Eagle Scout</li>
 			<li>
@@ -432,7 +461,7 @@ Handmade ASCII art is how you make the world a better place.
 				<span class="short-date">2/13 - now</span>
 			</li>
 		</ul>
-		<hr>
+		<hr><hr>
 	</div>
 
 	<!-- add resume that slides in from bottom as you scroll (craig teel style) and looks like stephenc's resume website
@@ -443,17 +472,35 @@ Handmade ASCII art is how you make the world a better place.
 </div>
 
 <footer id="contact">
-	<h3>
-		get in touch
-	</h3>
 
-	<!-- add sexy autofill->label boxes for people to fill out to get in touch with me. -->
+	<h2 class="section-header"> Contact </h2>
+	
+	<!--add sexy autofill->label boxes for people to fill out to get in touch with me
 
-	<!-- add "stalk me" and associated links -->
+	add "stalk me" and associated links -->
 
-	<p>
-		I'm glad you made it this far! Whether you have questions about my source code, want to give me a job, or just feel like saying hello, you can always reach out to me.
-	</p>
+	<div>
+		<p>
+			I'm glad you made it this far! Whether you have questions about my source code, want me to build things for you, or just feel like saying hello, you can always reach out to me via <a href="mailto:sidney.durant@gmail.com">email</a>. If you are interested in my work you can also download my resume <a href="/resume.pdf">here</a>, stalk me through <a href="https://www.linkedin.com/in/sidneydurant">linkedin</a>, and see my code on <a href="https://github.com/sidneydurant">github</a>. I'm currently looking for an internship involving computer vision and/or <span class="typed-text"></span>
+		</p>
+
+		<center id="link-wrapper">
+			<a href="mailto:sidney.durant@gmail.com">
+				<div class='icondiv'><svg class="icon-mail"><use xlink:href="#icon-mail"></use></svg></div>
+			</a>
+			<a href="/resume.pdf">
+				<div class='icondiv'><svg class="icon-download"><use xlink:href="#icon-download"></use></svg></div>
+			</a>
+			<a href="https://www.linkedin.com/in/sidneydurant">
+				<div class='icondiv'><svg class="icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg></div>
+			</a>
+			<a href="https://github.com/sidneydurant">
+				<div class='icondiv'><svg class="icon-github"><use xlink:href="#icon-github"></use></svg></div>
+			</a>
+		</center>
+		
+	</div>
+
 </footer>
 
 </body>
