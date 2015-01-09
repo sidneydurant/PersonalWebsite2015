@@ -323,7 +323,6 @@ header{
 			height: $browser-height/10;
 			border-top-left-radius: inherit;
 			border-top-right-radius: inherit;
-			border-bottom: solid 1px #cccccc;
 		}
 
 		.browser-button{
@@ -648,7 +647,7 @@ header{
 			display:inline-block;
 			width: 20px;
 			height:20px;
-			padding:5px;
+			padding:10px;
 			background-color:$light-color;
 			border-radius: 20px;
 			margin: 0px 10px 0px 10px;

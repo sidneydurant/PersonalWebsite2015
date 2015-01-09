@@ -275,7 +275,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    padding: 5px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 20px;
     margin: 0px 10px 0px 10px;
@@ -328,8 +328,7 @@ header {
     background-color: #eeeeee;
     height: 37.5px;
     border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    border-bottom: solid 1px #cccccc; }
+    border-top-right-radius: inherit; }
   #browser .browser-button {
     margin-left: 9.375px;
     margin-top: 12.5px;
@@ -508,8 +507,7 @@ header {
       background-color: #eeeeee;
       height: 21.875px;
       border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-      border-bottom: solid 1px #cccccc; }
+      border-top-right-radius: inherit; }
     #browser .browser-button {
       margin-left: 5.46875px;
       margin-top: 7.29167px;
@@ -688,8 +686,7 @@ header {
       background-color: #eeeeee;
       height: 18.125px;
       border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-      border-bottom: solid 1px #cccccc; }
+      border-top-right-radius: inherit; }
     #browser .browser-button {
       margin-left: 4.53125px;
       margin-top: 6.04167px;
