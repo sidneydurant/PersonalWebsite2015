@@ -2,7 +2,7 @@
 $primary-color: #3898f8;
 $dark-color: #303030;
 $light-color: #ffffff;
-$text-opacity: .87;
+$text-opacity: .95;
 
 $narrow-breakpoint: 350px;
 $medium-breakpoint: 600px;
@@ -68,7 +68,7 @@ p{
 	line-height: $lineheight;
 	text-align: center;
 	color: #000000;
-	opacity: .87;
+	opacity: $text-opacity;
 	padding-bottom: 48px;
 }
 
@@ -645,17 +645,31 @@ header{
 		
 		.icondiv{
 			display:inline-block;
-			width: 20px;
-			height:20px;
+			width: 30px;
+			height:30px;
 			padding:10px;
-			background-color:$light-color;
-			border-radius: 20px;
+			background-color:$dark-color;
+			border-radius: 34px;
+			border-style: solid;
+			border-width: 2px;
+			border-color: $light-color;
 			margin: 0px 10px 0px 10px;
 			cursor:pointer;
-			transition: box-shadow .25s;
-			.icon{
-				color:$dark-color;
+			transition: background-color .25s;
+
+			[class^="icon-"], [class*=" icon-"] {
+			    height: 20px;
+			    width: 20px;
+			    padding:5px;
+			    display: inline-block; 
+			    fill: $light-color; 
+			    transition: fill .25s;
 			}
+
+		}
+		.icondiv:hover{
+
+			background-color: $light-color;
 
 			[class^="icon-"], [class*=" icon-"] {
 			    height: 20px;
@@ -663,9 +677,7 @@ header{
 			    display: inline-block; 
 			    fill: $dark-color; 
 			}
-		}
-		.icondiv:hover{
-			box-shadow: 0px 0px 7px $light-color;
+			
 		}
 	}
 }

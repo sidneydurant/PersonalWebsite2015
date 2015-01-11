@@ -43,7 +43,7 @@ p {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  opacity: .87;
+  opacity: 0.95;
   padding-bottom: 48px; }
 
 .flex-container {
@@ -82,7 +82,7 @@ p {
 
 h1, h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 48px;
   line-height: 64px; }
 
@@ -273,23 +273,31 @@ header {
     text-align: justify; }
   #contact div .icondiv {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 10px;
-    background-color: #ffffff;
-    border-radius: 20px;
+    background-color: #303030;
+    border-radius: 34px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
     margin: 0px 10px 0px 10px;
     cursor: pointer;
-    transition: box-shadow .25s; }
-    #contact div .icondiv .icon {
-      color: #303030; }
+    transition: background-color .25s; }
     #contact div .icondiv [class^="icon-"], #contact div .icondiv [class*=" icon-"] {
+      height: 20px;
+      width: 20px;
+      padding: 5px;
+      display: inline-block;
+      fill: #ffffff;
+      transition: fill .25s; }
+  #contact div .icondiv:hover {
+    background-color: #ffffff; }
+    #contact div .icondiv:hover [class^="icon-"], #contact div .icondiv:hover [class*=" icon-"] {
       height: 20px;
       width: 20px;
       display: inline-block;
       fill: #303030; }
-  #contact div .icondiv:hover {
-    box-shadow: 0px 0px 7px #ffffff; }
 
 #browser {
   margin: auto;
