@@ -232,7 +232,7 @@ header {
       line-height: 21px; }
     #resume .resume-row ul li:nth-child(1) {
       padding-left: 0;
-      font-weight: bold;
+      font-weight: 600;
       float: left;
       display: inline; }
     #resume .resume-row ul li:nth-child(2) {
@@ -241,7 +241,7 @@ header {
       font-style: italic; }
     #resume .resume-row ul li:nth-child(3) {
       padding-left: 0;
-      font-weight: bold;
+      font-weight: 600;
       float: left;
       display: inline;
       clear: both; }
@@ -452,21 +452,21 @@ header {
     font-size: 37.5px;
     color: #303030;
     margin: auto;
-    font-weight: 300; }
+    font-weight: 200; }
   #window #window-max div {
     line-height: 37.5px;
     font-family: Raleway;
     font-size: 20.83333px;
     color: #303030;
     margin: auto;
-    font-weight: 800; }
+    font-weight: 200; }
   #window #window-min div {
     line-height: 20.83333px;
     font-family: Raleway;
     font-size: 37.5px;
     color: #303030;
     margin: auto;
-    font-weight: 300; }
+    font-weight: 200; }
   #window #window-title {
     position: relative;
     margin-left: 125px;
@@ -632,21 +632,21 @@ header {
       font-size: 21.875px;
       color: #303030;
       margin: auto;
-      font-weight: 300; }
+      font-weight: 200; }
     #window #window-max div {
       line-height: 21.875px;
       font-family: Raleway;
       font-size: 12.15278px;
       color: #303030;
       margin: auto;
-      font-weight: 800; }
+      font-weight: 200; }
     #window #window-min div {
       line-height: 12.15278px;
       font-family: Raleway;
       font-size: 21.875px;
       color: #303030;
       margin: auto;
-      font-weight: 300; }
+      font-weight: 200; }
     #window #window-title {
       position: relative;
       margin-left: 72.91667px;
@@ -811,21 +811,21 @@ header {
       font-size: 18.125px;
       color: #303030;
       margin: auto;
-      font-weight: 300; }
+      font-weight: 200; }
     #window #window-max div {
       line-height: 18.125px;
       font-family: Raleway;
       font-size: 10.06944px;
       color: #303030;
       margin: auto;
-      font-weight: 800; }
+      font-weight: 200; }
     #window #window-min div {
       line-height: 10.06944px;
       font-family: Raleway;
       font-size: 18.125px;
       color: #303030;
       margin: auto;
-      font-weight: 300; }
+      font-weight: 200; }
     #window #window-title {
       position: relative;
       margin-left: 60.41667px;

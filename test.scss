@@ -481,7 +481,7 @@ header{
 				font-size: $window-height/10;
 				color: $dark-color;
 				margin: auto;
-				font-weight: 300;
+				font-weight: 200;
 			}
 		}
 		#window-max{
@@ -491,7 +491,7 @@ header{
 				font-size: $window-height/18;
 				color: $dark-color;
 				margin: auto;
-				font-weight: 800;
+				font-weight: 200;
 			}
 		}
 		#window-min{
@@ -501,7 +501,7 @@ header{
 				font-size: $window-height/10;
 				color: $dark-color;
 				margin: auto;
-				font-weight: 300;
+				font-weight: 200;
 			}
 		}
 
@@ -580,7 +580,7 @@ header{
 			}
 			li:nth-child(1){
 				padding-left: 0;
-				font-weight: bold;
+				font-weight: 600;
 				float: left;
 				display:inline;
 			}
@@ -592,7 +592,7 @@ header{
 
 			li:nth-child(3){
 				padding-left: 0;
-				font-weight: bold;
+				font-weight: 600;
 				float: left;
 				display:inline;
 				clear:both;
