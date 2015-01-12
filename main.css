@@ -39,12 +39,12 @@ h3 {
   font-variant: small-caps;
   font-weight: 600;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 1;
   padding-bottom: 32px; }
 
 p {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   text-align: center;
   color: #000000;
   opacity: 0.9;
@@ -88,7 +88,7 @@ h1, h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 48px;
-  line-height: 64px; }
+  line-height: 1.5; }
 
 #lowpolyme {
   position: absolute;
@@ -152,7 +152,7 @@ header {
     margin: 0px auto; } }
 
 .section-header {
-  line-height: 32px;
+  line-height: 1;
   padding-top: 48px;
   padding-bottom: 48px;
   text-align: center; }
@@ -229,7 +229,7 @@ header {
       padding-left: 24px;
       margin-left: 24px;
       font-size: 14px;
-      line-height: 21px; }
+      line-height: 1.5; }
     #resume .resume-row ul li:nth-child(1) {
       padding-left: 0;
       font-weight: 600;

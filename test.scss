@@ -61,16 +61,15 @@ h3{
 	font-variant: small-caps;
 	font-weight: 600;
 	font-size: 28px;
-	line-height: 28px;
+	line-height: 1;
 	padding-bottom: 32px;
 }
 
 $fontsize: 14px;
-$lineheight: $fontsize*1.5;
 
 p{
 	font-size: $fontsize;
-	line-height: $lineheight;
+	line-height: 1.5;
 	text-align: center;
 	color: #000000;
 	opacity: $text-opacity;
@@ -130,7 +129,7 @@ h1, h2{
 	font-family: "Raleway", sans-serif;
 	font-weight: 200;
 	font-size: 48px;
-	line-height: 64px;
+	line-height: 1.5;
 }
 
 #lowpolyme{
@@ -218,7 +217,7 @@ header{
 }
 
 .section-header{
-	line-height: 32px;
+	line-height: 1;
 	padding-top: 48px;
 	padding-bottom: 48px;
 	text-align: center;
@@ -713,7 +712,7 @@ header{
 				padding-left: $indentation;
 				margin-left: $indentation;
 				font-size: $fontsize;
-				line-height: $lineheight;
+				line-height: 1.5;
 			}
 			li:nth-child(1){
 				padding-left: 0;
