@@ -266,7 +266,9 @@ header {
 
 #contact {
   background-color: #303030;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-left: 0px;
+  padding-right: 0px; }
   #contact h3 {
     color: #ffffff; }
     @media (max-width: 600px) {
