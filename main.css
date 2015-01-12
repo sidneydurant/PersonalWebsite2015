@@ -305,26 +305,26 @@ header {
 
 #browser {
   margin: auto;
-  width: 600px;
-  height: 375px;
-  border-radius: 6px;
+  width: 800px;
+  height: 500px;
+  border-radius: 8px;
   border-width: 1px;
   border-color: #d1d1d1;
   border-style: solid; }
   #browser .browser-image {
     background-size: cover;
-    height: 337.5px;
-    width: 600px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    height: 450px;
+    width: 800px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
     #browser .browser-image #browser-image-overlay {
       background-color: #303030;
       width: 100%;
       height: 100%;
       opacity: 0;
       transition: opacity .5s;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px; }
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px; }
     #browser .browser-image #browser-image-overlay:hover {
       opacity: .8; }
     @media (max-width: 600px) {
@@ -338,15 +338,15 @@ header {
         text-align: justify; }
   #browser #browser-navbar {
     background-color: #eeeeee;
-    height: 37.5px;
+    height: 50px;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit; }
   #browser .browser-button {
-    margin-left: 9.375px;
-    margin-top: 12.5px;
-    width: 12.5px;
-    height: 12.5px;
-    border-radius: 6.25px;
+    margin-left: 12.5px;
+    margin-top: 16.66667px;
+    width: 16.66667px;
+    height: 16.66667px;
+    border-radius: 8.33333px;
     float: left; }
   #browser #browser-close {
     background-color: #f85b42; }
@@ -354,67 +354,67 @@ header {
     background-color: #f7bd15; }
   #browser #browser-min {
     background-color: #21ce29;
-    margin-right: 18.75px; }
+    margin-right: 25px; }
   #browser #browser-back {
-    margin-right: 4.6875px; }
+    margin-right: 6.25px; }
   #browser #browser-back, #browser #browser-forward {
-    margin-top: 6.25px;
-    border-radius: 4.6875px;
+    margin-top: 8.33333px;
+    border-radius: 6.25px;
     float: left;
-    width: 25px;
-    height: 25px;
+    width: 33.33333px;
+    height: 33.33333px;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
     #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       position: relative;
-      top: 4.6875px;
-      left: 4.6875px;
-      border-top-left-radius: 15px;
-      border-bottom-right-radius: 1.875px;
-      border-top-right-radius: 1.875px;
-      border-bottom-left-radius: 1.875px; }
+      top: 6.25px;
+      left: 6.25px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 2.5px;
+      border-top-right-radius: 2.5px;
+      border-bottom-left-radius: 2.5px; }
       #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
         position: relative;
-        border-top-left-radius: 15px;
-        top: -2.34375px;
-        left: -2.34375px;
-        width: 15px;
-        height: 15px;
+        border-top-left-radius: 20px;
+        top: -3.125px;
+        left: -3.125px;
+        width: 20px;
+        height: 20px;
         background-color: #fefefe; }
     #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
-      transform: translateX(2.34375px) rotate(135deg);
+      transform: translateX(3.125px) rotate(135deg);
       background-color: #999999; }
     #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
-      transform: translateX(-2.34375px) rotate(-45deg);
+      transform: translateX(-3.125px) rotate(-45deg);
       background-color: #cccccc; }
   #browser #browser-search {
     position: relative;
-    margin-left: 18.75px;
-    margin-top: 6.25px;
-    border-radius: 4.6875px;
+    margin-left: 25px;
+    margin-top: 8.33333px;
+    border-radius: 6.25px;
     float: left;
-    width: 300px;
-    height: 25px;
+    width: 400px;
+    height: 33.33333px;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
     #browser #browser-search p {
       line-height: 0px;
-      margin-top: 12.5px;
-      font-size: 12.5px; }
+      margin-top: 16.66667px;
+      font-size: 16.66667px; }
 
 #window {
   margin: auto;
-  width: 600px;
-  height: 375px;
+  width: 800px;
+  height: 500px;
   border-width: 1px;
   border-color: #d1d1d1;
   border-style: solid; }
   #window .window-image {
     background-size: cover;
-    height: 337.5px;
-    width: 600px; }
+    height: 450px;
+    width: 800px; }
     #window .window-image #window-image-overlay {
       background-color: #303030;
       width: 100%;
@@ -435,51 +435,230 @@ header {
   #window #window-navbar {
     /*background-color: #eeeeee;*/
     background-color: #c6e8fc;
-    height: 37.5px;
+    height: 50px;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     box-shadow: 0 1px 1px #cccccc; }
   #window .window-button {
-    width: 31.25px;
-    height: 18.75px;
+    width: 41.66667px;
+    height: 25px;
     float: right;
     cursor: default; }
   #window .window-button:hover {
     cursor: default; }
   #window #window-close div {
-    line-height: 34.09091px;
+    line-height: 45.45455px;
     font-family: Raleway;
-    font-size: 37.5px;
+    font-size: 50px;
     color: #303030;
     margin: auto;
     font-weight: 200; }
   #window #window-max div {
-    line-height: 37.5px;
+    line-height: 50px;
     font-family: Raleway;
-    font-size: 20.83333px;
+    font-size: 27.77778px;
     color: #303030;
     margin: auto;
     font-weight: 200; }
   #window #window-min div {
-    line-height: 20.83333px;
+    line-height: 27.77778px;
     font-family: Raleway;
-    font-size: 37.5px;
+    font-size: 50px;
     color: #303030;
     margin: auto;
     font-weight: 200; }
   #window #window-title {
     position: relative;
-    margin-left: 125px;
-    margin-top: 6.25px;
-    border-radius: 4.6875px;
+    margin-left: 166.66667px;
+    margin-top: 8.33333px;
+    border-radius: 6.25px;
     float: left;
-    width: 337.5px;
-    height: 25px; }
+    width: 450px;
+    height: 33.33333px; }
     #window #window-title p {
       line-height: 0px;
-      margin-top: 12.5px;
-      font-size: 12.5px; }
+      margin-top: 16.66667px;
+      font-size: 16.66667px; }
 
+@media (max-width: 1024px) {
+  #browser {
+    margin: auto;
+    width: 600px;
+    height: 375px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    border-style: solid; }
+    #browser .browser-image {
+      background-size: cover;
+      height: 337.5px;
+      width: 600px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
+      #browser .browser-image #browser-image-overlay {
+        background-color: #303030;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .5s;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px; }
+      #browser .browser-image #browser-image-overlay:hover {
+        opacity: .8; } }
+    @media (max-width: 1024px) and (max-width: 600px) {
+      #browser .browser-image #browser-image-overlay {
+        display: none; } }
+@media (max-width: 1024px) {
+      #browser .browser-image #display-image-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+        #browser .browser-image #display-image-text p {
+          text-align: justify; }
+    #browser #browser-navbar {
+      background-color: #eeeeee;
+      height: 37.5px;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit; }
+    #browser .browser-button {
+      margin-left: 9.375px;
+      margin-top: 12.5px;
+      width: 12.5px;
+      height: 12.5px;
+      border-radius: 6.25px;
+      float: left; }
+    #browser #browser-close {
+      background-color: #f85b42; }
+    #browser #browser-max {
+      background-color: #f7bd15; }
+    #browser #browser-min {
+      background-color: #21ce29;
+      margin-right: 18.75px; }
+    #browser #browser-back {
+      margin-right: 4.6875px; }
+    #browser #browser-back, #browser #browser-forward {
+      margin-top: 6.25px;
+      border-radius: 4.6875px;
+      float: left;
+      width: 25px;
+      height: 25px;
+      background-color: #fefefe;
+      box-shadow: 0 1px 0 #cccccc; }
+      #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 4.6875px;
+        left: 4.6875px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 1.875px;
+        border-top-right-radius: 1.875px;
+        border-bottom-left-radius: 1.875px; }
+        #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+          position: relative;
+          border-top-left-radius: 15px;
+          top: -2.34375px;
+          left: -2.34375px;
+          width: 15px;
+          height: 15px;
+          background-color: #fefefe; }
+      #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+        transform: translateX(2.34375px) rotate(135deg);
+        background-color: #999999; }
+      #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+        transform: translateX(-2.34375px) rotate(-45deg);
+        background-color: #cccccc; }
+    #browser #browser-search {
+      position: relative;
+      margin-left: 18.75px;
+      margin-top: 6.25px;
+      border-radius: 4.6875px;
+      float: left;
+      width: 300px;
+      height: 25px;
+      background-color: #fefefe;
+      box-shadow: 0 1px 0 #cccccc; }
+      #browser #browser-search p {
+        line-height: 0px;
+        margin-top: 12.5px;
+        font-size: 12.5px; }
+
+  #window {
+    margin: auto;
+    width: 600px;
+    height: 375px;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    border-style: solid; }
+    #window .window-image {
+      background-size: cover;
+      height: 337.5px;
+      width: 600px; }
+      #window .window-image #window-image-overlay {
+        background-color: #303030;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .5s; }
+      #window .window-image #window-image-overlay:hover {
+        opacity: .8; } }
+    @media (max-width: 1024px) and (max-width: 600px) {
+      #window .window-image #window-image-overlay {
+        display: none; } }
+@media (max-width: 1024px) {
+      #window .window-image #display-image-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+        #window .window-image #display-image-text p {
+          text-align: justify; }
+    #window #window-navbar {
+      /*background-color: #eeeeee;*/
+      background-color: #c6e8fc;
+      height: 37.5px;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      box-shadow: 0 1px 1px #cccccc; }
+    #window .window-button {
+      width: 31.25px;
+      height: 18.75px;
+      float: right;
+      cursor: default; }
+    #window .window-button:hover {
+      cursor: default; }
+    #window #window-close div {
+      line-height: 34.09091px;
+      font-family: Raleway;
+      font-size: 37.5px;
+      color: #303030;
+      margin: auto;
+      font-weight: 200; }
+    #window #window-max div {
+      line-height: 37.5px;
+      font-family: Raleway;
+      font-size: 20.83333px;
+      color: #303030;
+      margin: auto;
+      font-weight: 200; }
+    #window #window-min div {
+      line-height: 20.83333px;
+      font-family: Raleway;
+      font-size: 37.5px;
+      color: #303030;
+      margin: auto;
+      font-weight: 200; }
+    #window #window-title {
+      position: relative;
+      margin-left: 125px;
+      margin-top: 6.25px;
+      border-radius: 4.6875px;
+      float: left;
+      width: 337.5px;
+      height: 25px; }
+      #window #window-title p {
+        line-height: 0px;
+        margin-top: 12.5px;
+        font-size: 12.5px; } }
 @media (max-width: 600px) {
   #browser {
     margin: auto;
@@ -658,8 +837,8 @@ header {
       #window #window-title p {
         line-height: 0px;
         margin-top: 7.29167px;
-        font-size: 7.29167px; }
-
+        font-size: 7.29167px; } }
+@media (max-width: 350px) {
   #browser {
     margin: auto;
     width: 290px;
@@ -684,10 +863,10 @@ header {
         border-bottom-right-radius: 2.9px; }
       #browser .browser-image #browser-image-overlay:hover {
         opacity: .8; } }
-    @media (max-width: 600px) and (max-width: 600px) {
+    @media (max-width: 350px) and (max-width: 600px) {
       #browser .browser-image #browser-image-overlay {
         display: none; } }
-@media (max-width: 600px) {
+@media (max-width: 350px) {
       #browser .browser-image #display-image-text {
         position: relative;
         top: 50%;
@@ -781,10 +960,10 @@ header {
         transition: opacity .5s; }
       #window .window-image #window-image-overlay:hover {
         opacity: .8; } }
-    @media (max-width: 600px) and (max-width: 600px) {
+    @media (max-width: 350px) and (max-width: 600px) {
       #window .window-image #window-image-overlay {
         display: none; } }
-@media (max-width: 600px) {
+@media (max-width: 350px) {
       #window .window-image #display-image-text {
         position: relative;
         top: 50%;

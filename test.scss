@@ -694,13 +694,15 @@ header{
 	@include window($display-width);
 }
 
-@include display($medium-breakpoint);
+@include display(800px);
+@media (max-width: $wide-breakpoint){
+	@include display($medium-breakpoint);
+}
 @media (max-width: $medium-breakpoint){
 	@include display($narrow-breakpoint);
-	@include display($min-width);
 }
 @media (max-width: $narrow-breakpoint){
-
+	@include display($min-width);
 }
 @media (max-width: $min-width){
 	.display{
