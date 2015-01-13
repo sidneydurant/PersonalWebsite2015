@@ -294,6 +294,11 @@ header {
   #contact div p {
     color: #ffffff;
     text-align: justify; }
+  #contact div .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px; }
   #contact div .icondiv {
     display: inline-block;
     width: 18px;

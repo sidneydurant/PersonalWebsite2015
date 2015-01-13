@@ -666,6 +666,13 @@ header{
 			text-align: justify;
 		}
 
+		.link-container{
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			padding-bottom: 0px;
+		}
+
 		.icondiv{
 			display:inline-block;
 			width: 18px;
@@ -692,6 +699,7 @@ header{
 			}
 
 		}
+
 		.icondiv:hover{
 
 			background-color: $light-color;
