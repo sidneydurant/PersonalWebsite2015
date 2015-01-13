@@ -814,10 +814,10 @@ header{
 			border-color: $light-color;
 			margin: 0px 8px 0px 8px;
 			cursor:pointer;
-			transition: background-color .25s, box-shadow .25s;
-			opacity: $text-opacity;
+			transition: background-color .25s, box-shadow .25s, opacity .25s;
+			opacity: .6;
 
-			box-shadow: 0 0 0 8px $dark-color;
+			box-shadow: 0 0 0 12px $dark-color;
 
 			[class^="icon-"], [class*=" icon-"] {
 			    height: 18px;
@@ -832,6 +832,7 @@ header{
 
 			background-color: $light-color;
 			box-shadow: 0 0 0 0 $light-color;
+			opacity: 1;
 
 			[class^="icon-"], [class*=" icon-"] {
 			    display: inline-block; 

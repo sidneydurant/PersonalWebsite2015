@@ -306,9 +306,9 @@ header {
     border-color: #ffffff;
     margin: 0px 8px 0px 8px;
     cursor: pointer;
-    transition: background-color .25s, box-shadow .25s;
-    opacity: 0.9;
-    box-shadow: 0 0 0 8px #303030; }
+    transition: background-color .25s, box-shadow .25s, opacity .25s;
+    opacity: .6;
+    box-shadow: 0 0 0 12px #303030; }
     #contact div .icondiv [class^="icon-"], #contact div .icondiv [class*=" icon-"] {
       height: 18px;
       width: 18px;
@@ -317,7 +317,8 @@ header {
       transition: fill .25s; }
   #contact div .icondiv:hover {
     background-color: #ffffff;
-    box-shadow: 0 0 0 0 #ffffff; }
+    box-shadow: 0 0 0 0 #ffffff;
+    opacity: 1; }
     #contact div .icondiv:hover [class^="icon-"], #contact div .icondiv:hover [class*=" icon-"] {
       display: inline-block;
       fill: #303030; }
