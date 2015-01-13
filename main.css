@@ -179,13 +179,13 @@ header {
     background: linear-gradient(to right, #fdfdfd, #f9f9f9, #fefefe, #f7f7f7); }
   #projects .display {
     margin-bottom: 48px; }
-  #projects #display-image-text p {
+  #projects .display-image-text p {
     color: #ffffff;
     width: 70%;
     margin: auto;
     text-shadow: 0px 1px 2px #000000;
     padding-bottom: 0px; }
-  #projects #display-image-text h3 {
+  #projects .display-image-text h3 {
     color: #ffffff;
     text-shadow: 0px 1px 2px #000000; }
   #projects #sidneydurant-browser-image {
@@ -323,7 +323,7 @@ header {
       display: inline-block;
       fill: #303030; }
 
-#browser {
+.browser {
   margin: auto;
   width: 45vw;
   height: 28.125vw;
@@ -331,13 +331,13 @@ header {
   border-width: 1px;
   border-color: #d1d1d1;
   border-style: solid; }
-  #browser .browser-image {
+  .browser .browser-image {
     background-size: cover;
     height: 25.3125vw;
     width: 45vw;
     border-bottom-left-radius: 0.45vw;
     border-bottom-right-radius: 0.45vw; }
-    #browser .browser-image #browser-image-overlay {
+    .browser .browser-image .browser-image-overlay {
       background-color: #303030;
       width: 100%;
       height: 100%;
@@ -345,39 +345,39 @@ header {
       transition: opacity .5s;
       border-bottom-left-radius: 0.45vw;
       border-bottom-right-radius: 0.45vw; }
-    #browser .browser-image #browser-image-overlay:hover {
+    .browser .browser-image .browser-image-overlay:hover {
       opacity: .8; }
     @media (max-width: 600px) {
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image #browser-image-overlay {
         display: none; } }
-    #browser .browser-image #display-image-text {
+    .browser .browser-image .display-image-text {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-      #browser .browser-image #display-image-text p {
+      .browser .browser-image .display-image-text p {
         text-align: justify; }
-  #browser #browser-navbar {
+  .browser .browser-navbar {
     background-color: #eeeeee;
     height: 2.8125vw;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit; }
-  #browser .browser-button {
+  .browser .browser-button {
     margin-left: 0.70313vw;
     margin-top: 0.9375vw;
     width: 0.9375vw;
     height: 0.9375vw;
     border-radius: 0.46875vw;
     float: left; }
-  #browser #browser-close {
+  .browser .browser-close {
     background-color: #f85b42; }
-  #browser #browser-max {
+  .browser .browser-max {
     background-color: #f7bd15; }
-  #browser #browser-min {
+  .browser .browser-min {
     background-color: #21ce29;
     margin-right: 1.40625vw; }
-  #browser #browser-back {
+  .browser .browser-back {
     margin-right: 0.35156vw; }
-  #browser #browser-back, #browser #browser-forward {
+  .browser .browser-back, .browser .browser-forward {
     margin-top: 0.46875vw;
     border-radius: 0.35156vw;
     float: left;
@@ -385,7 +385,7 @@ header {
     height: 1.875vw;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
-    #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+    .browser .browser-back .browser-back-arrow, .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-back-arrow, .browser .browser-forward .browser-forward-arrow {
       width: 1.125vw;
       height: 1.125vw;
       position: relative;
@@ -395,7 +395,7 @@ header {
       border-bottom-right-radius: 0.14063vw;
       border-top-right-radius: 0.14063vw;
       border-bottom-left-radius: 0.14063vw; }
-      #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+      .browser .browser-back .browser-back-arrow .browser-back-occluder, .browser .browser-back .browser-back-arrow .browser-forward-occluder, .browser .browser-back .browser-forward-arrow .browser-back-occluder, .browser .browser-back .browser-forward-arrow .browser-forward-occluder, .browser .browser-forward .browser-back-arrow .browser-back-occluder, .browser .browser-forward .browser-back-arrow .browser-forward-occluder, .browser .browser-forward .browser-forward-arrow .browser-back-occluder, .browser .browser-forward .browser-forward-arrow .browser-forward-occluder {
         position: relative;
         border-top-left-radius: 1.125vw;
         top: -0.17578vw;
@@ -403,13 +403,13 @@ header {
         width: 1.125vw;
         height: 1.125vw;
         background-color: #fefefe; }
-    #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+    .browser .browser-back .browser-back-arrow, .browser .browser-forward .browser-back-arrow {
       transform: translateX(0.17578vw) rotate(135deg);
       background-color: #999999; }
-    #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+    .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-forward-arrow {
       transform: translateX(-0.17578vw) rotate(-45deg);
       background-color: #cccccc; }
-  #browser #browser-search {
+  .browser .browser-search {
     position: relative;
     margin-left: 1.40625vw;
     margin-top: 0.46875vw;
@@ -419,75 +419,75 @@ header {
     height: 1.875vw;
     background-color: #fefefe;
     box-shadow: 0 1px 0 #cccccc; }
-    #browser #browser-search p {
+    .browser .browser-search p {
       line-height: 0px;
       margin-top: 0.9375vw;
       font-size: 0.9375vw; }
 
-#window {
+.window {
   margin: auto;
   width: 45vw;
   height: 28.125vw;
   border-width: 1px;
   border-color: #d1d1d1;
   border-style: solid; }
-  #window .window-image {
+  .window .window-image {
     background-size: cover;
     height: 25.3125vw;
     width: 45vw; }
-    #window .window-image #window-image-overlay {
+    .window .window-image .window-image-overlay {
       background-color: #303030;
       width: 100%;
       height: 100%;
       opacity: 0;
       transition: opacity .5s; }
-    #window .window-image #window-image-overlay:hover {
+    .window .window-image .window-image-overlay:hover {
       opacity: .8; }
     @media (max-width: 600px) {
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         display: none; } }
-    #window .window-image #display-image-text {
+    .window .window-image .display-image-text {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-      #window .window-image #display-image-text p {
+      .window .window-image .display-image-text p {
         text-align: justify; }
-  #window #window-navbar {
+  .window .window-navbar {
     /*background-color: #eeeeee;*/
     background-color: #c6e8fc;
     height: 2.8125vw;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     box-shadow: 0 1px 1px #cccccc; }
-  #window .window-button {
+  .window .window-button {
     width: 2.34375vw;
     height: 1.40625vw;
     float: right;
     cursor: default; }
-  #window .window-button:hover {
+  .window .window-button:hover {
     cursor: default; }
-  #window #window-close div {
+  .window .window-close div {
     line-height: 2.55682vw;
     font-family: Raleway;
     font-size: 2.8125vw;
     color: #303030;
     margin: auto;
     font-weight: 200; }
-  #window #window-max div {
+  .window .window-max div {
     line-height: 2.8125vw;
     font-family: Raleway;
     font-size: 1.5625vw;
     color: #303030;
     margin: auto;
     font-weight: 200; }
-  #window #window-min div {
+  .window .window-min div {
     line-height: 1.5625vw;
     font-family: Raleway;
     font-size: 2.8125vw;
     color: #303030;
     margin: auto;
     font-weight: 200; }
-  #window #window-title {
+  .window .window-title {
     position: relative;
     margin-left: 9.375vw;
     margin-top: 0.46875vw;
@@ -495,13 +495,13 @@ header {
     float: left;
     width: 25.3125vw;
     height: 1.875vw; }
-    #window #window-title p {
+    .window .window-title p {
       line-height: 0px;
       margin-top: 0.9375vw;
       font-size: 0.9375vw; }
 
 @media (max-width: 1800px) {
-  #browser {
+  .browser {
     margin: auto;
     width: 800px;
     height: 500px;
@@ -509,13 +509,13 @@ header {
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #browser .browser-image {
+    .browser .browser-image {
       background-size: cover;
       height: 450px;
       width: 800px;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px; }
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image .browser-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
@@ -523,40 +523,40 @@ header {
         transition: opacity .5s;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px; }
-      #browser .browser-image #browser-image-overlay:hover {
+      .browser .browser-image .browser-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 1800px) and (max-width: 600px) {
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image #browser-image-overlay {
         display: none; } }
 @media (max-width: 1800px) {
-      #browser .browser-image #display-image-text {
+      .browser .browser-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #browser .browser-image #display-image-text p {
+        .browser .browser-image .display-image-text p {
           text-align: justify; }
-    #browser #browser-navbar {
+    .browser .browser-navbar {
       background-color: #eeeeee;
       height: 50px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit; }
-    #browser .browser-button {
+    .browser .browser-button {
       margin-left: 12.5px;
       margin-top: 16.66667px;
       width: 16.66667px;
       height: 16.66667px;
       border-radius: 8.33333px;
       float: left; }
-    #browser #browser-close {
+    .browser .browser-close {
       background-color: #f85b42; }
-    #browser #browser-max {
+    .browser .browser-max {
       background-color: #f7bd15; }
-    #browser #browser-min {
+    .browser .browser-min {
       background-color: #21ce29;
       margin-right: 25px; }
-    #browser #browser-back {
+    .browser .browser-back {
       margin-right: 6.25px; }
-    #browser #browser-back, #browser #browser-forward {
+    .browser .browser-back, .browser .browser-forward {
       margin-top: 8.33333px;
       border-radius: 6.25px;
       float: left;
@@ -564,7 +564,7 @@ header {
       height: 33.33333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-back-arrow, .browser .browser-forward .browser-forward-arrow {
         width: 20px;
         height: 20px;
         position: relative;
@@ -574,7 +574,7 @@ header {
         border-bottom-right-radius: 2.5px;
         border-top-right-radius: 2.5px;
         border-bottom-left-radius: 2.5px; }
-        #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+        .browser .browser-back .browser-back-arrow .browser-back-occluder, .browser .browser-back .browser-back-arrow .browser-forward-occluder, .browser .browser-back .browser-forward-arrow .browser-back-occluder, .browser .browser-back .browser-forward-arrow .browser-forward-occluder, .browser .browser-forward .browser-back-arrow .browser-back-occluder, .browser .browser-forward .browser-back-arrow .browser-forward-occluder, .browser .browser-forward .browser-forward-arrow .browser-back-occluder, .browser .browser-forward .browser-forward-arrow .browser-forward-occluder {
           position: relative;
           border-top-left-radius: 20px;
           top: -3.125px;
@@ -582,13 +582,13 @@ header {
           width: 20px;
           height: 20px;
           background-color: #fefefe; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-forward .browser-back-arrow {
         transform: translateX(3.125px) rotate(135deg);
         background-color: #999999; }
-      #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-forward-arrow {
         transform: translateX(-3.125px) rotate(-45deg);
         background-color: #cccccc; }
-    #browser #browser-search {
+    .browser .browser-search {
       position: relative;
       margin-left: 25px;
       margin-top: 8.33333px;
@@ -598,76 +598,76 @@ header {
       height: 33.33333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-search p {
+      .browser .browser-search p {
         line-height: 0px;
         margin-top: 16.66667px;
         font-size: 16.66667px; }
 
-  #window {
+  .window {
     margin: auto;
     width: 800px;
     height: 500px;
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #window .window-image {
+    .window .window-image {
       background-size: cover;
       height: 450px;
       width: 800px; }
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity .5s; }
-      #window .window-image #window-image-overlay:hover {
+      .window .window-image .window-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 1800px) and (max-width: 600px) {
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         display: none; } }
 @media (max-width: 1800px) {
-      #window .window-image #display-image-text {
+      .window .window-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #window .window-image #display-image-text p {
+        .window .window-image .display-image-text p {
           text-align: justify; }
-    #window #window-navbar {
+    .window .window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
       height: 50px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
       box-shadow: 0 1px 1px #cccccc; }
-    #window .window-button {
+    .window .window-button {
       width: 41.66667px;
       height: 25px;
       float: right;
       cursor: default; }
-    #window .window-button:hover {
+    .window .window-button:hover {
       cursor: default; }
-    #window #window-close div {
+    .window .window-close div {
       line-height: 45.45455px;
       font-family: Raleway;
       font-size: 50px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-max div {
+    .window .window-max div {
       line-height: 50px;
       font-family: Raleway;
       font-size: 27.77778px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-min div {
+    .window .window-min div {
       line-height: 27.77778px;
       font-family: Raleway;
       font-size: 50px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-title {
+    .window .window-title {
       position: relative;
       margin-left: 166.66667px;
       margin-top: 8.33333px;
@@ -675,12 +675,12 @@ header {
       float: left;
       width: 450px;
       height: 33.33333px; }
-      #window #window-title p {
+      .window .window-title p {
         line-height: 0px;
         margin-top: 16.66667px;
         font-size: 16.66667px; } }
 @media (max-width: 1024px) {
-  #browser {
+  .browser {
     margin: auto;
     width: 600px;
     height: 375px;
@@ -688,13 +688,13 @@ header {
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #browser .browser-image {
+    .browser .browser-image {
       background-size: cover;
       height: 337.5px;
       width: 600px;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px; }
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image .browser-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
@@ -702,40 +702,40 @@ header {
         transition: opacity .5s;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px; }
-      #browser .browser-image #browser-image-overlay:hover {
+      .browser .browser-image .browser-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 1024px) and (max-width: 600px) {
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image #browser-image-overlay {
         display: none; } }
 @media (max-width: 1024px) {
-      #browser .browser-image #display-image-text {
+      .browser .browser-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #browser .browser-image #display-image-text p {
+        .browser .browser-image .display-image-text p {
           text-align: justify; }
-    #browser #browser-navbar {
+    .browser .browser-navbar {
       background-color: #eeeeee;
       height: 37.5px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit; }
-    #browser .browser-button {
+    .browser .browser-button {
       margin-left: 9.375px;
       margin-top: 12.5px;
       width: 12.5px;
       height: 12.5px;
       border-radius: 6.25px;
       float: left; }
-    #browser #browser-close {
+    .browser .browser-close {
       background-color: #f85b42; }
-    #browser #browser-max {
+    .browser .browser-max {
       background-color: #f7bd15; }
-    #browser #browser-min {
+    .browser .browser-min {
       background-color: #21ce29;
       margin-right: 18.75px; }
-    #browser #browser-back {
+    .browser .browser-back {
       margin-right: 4.6875px; }
-    #browser #browser-back, #browser #browser-forward {
+    .browser .browser-back, .browser .browser-forward {
       margin-top: 6.25px;
       border-radius: 4.6875px;
       float: left;
@@ -743,7 +743,7 @@ header {
       height: 25px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-back-arrow, .browser .browser-forward .browser-forward-arrow {
         width: 15px;
         height: 15px;
         position: relative;
@@ -753,7 +753,7 @@ header {
         border-bottom-right-radius: 1.875px;
         border-top-right-radius: 1.875px;
         border-bottom-left-radius: 1.875px; }
-        #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+        .browser .browser-back .browser-back-arrow .browser-back-occluder, .browser .browser-back .browser-back-arrow .browser-forward-occluder, .browser .browser-back .browser-forward-arrow .browser-back-occluder, .browser .browser-back .browser-forward-arrow .browser-forward-occluder, .browser .browser-forward .browser-back-arrow .browser-back-occluder, .browser .browser-forward .browser-back-arrow .browser-forward-occluder, .browser .browser-forward .browser-forward-arrow .browser-back-occluder, .browser .browser-forward .browser-forward-arrow .browser-forward-occluder {
           position: relative;
           border-top-left-radius: 15px;
           top: -2.34375px;
@@ -761,13 +761,13 @@ header {
           width: 15px;
           height: 15px;
           background-color: #fefefe; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-forward .browser-back-arrow {
         transform: translateX(2.34375px) rotate(135deg);
         background-color: #999999; }
-      #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-forward-arrow {
         transform: translateX(-2.34375px) rotate(-45deg);
         background-color: #cccccc; }
-    #browser #browser-search {
+    .browser .browser-search {
       position: relative;
       margin-left: 18.75px;
       margin-top: 6.25px;
@@ -777,76 +777,76 @@ header {
       height: 25px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-search p {
+      .browser .browser-search p {
         line-height: 0px;
         margin-top: 12.5px;
         font-size: 12.5px; }
 
-  #window {
+  .window {
     margin: auto;
     width: 600px;
     height: 375px;
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #window .window-image {
+    .window .window-image {
       background-size: cover;
       height: 337.5px;
       width: 600px; }
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity .5s; }
-      #window .window-image #window-image-overlay:hover {
+      .window .window-image .window-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 1024px) and (max-width: 600px) {
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         display: none; } }
 @media (max-width: 1024px) {
-      #window .window-image #display-image-text {
+      .window .window-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #window .window-image #display-image-text p {
+        .window .window-image .display-image-text p {
           text-align: justify; }
-    #window #window-navbar {
+    .window .window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
       height: 37.5px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
       box-shadow: 0 1px 1px #cccccc; }
-    #window .window-button {
+    .window .window-button {
       width: 31.25px;
       height: 18.75px;
       float: right;
       cursor: default; }
-    #window .window-button:hover {
+    .window .window-button:hover {
       cursor: default; }
-    #window #window-close div {
+    .window .window-close div {
       line-height: 34.09091px;
       font-family: Raleway;
       font-size: 37.5px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-max div {
+    .window .window-max div {
       line-height: 37.5px;
       font-family: Raleway;
       font-size: 20.83333px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-min div {
+    .window .window-min div {
       line-height: 20.83333px;
       font-family: Raleway;
       font-size: 37.5px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-title {
+    .window .window-title {
       position: relative;
       margin-left: 125px;
       margin-top: 6.25px;
@@ -854,12 +854,12 @@ header {
       float: left;
       width: 337.5px;
       height: 25px; }
-      #window #window-title p {
+      .window .window-title p {
         line-height: 0px;
         margin-top: 12.5px;
         font-size: 12.5px; } }
 @media (max-width: 600px) {
-  #browser {
+  .browser {
     margin: auto;
     width: 350px;
     height: 218.75px;
@@ -867,13 +867,13 @@ header {
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #browser .browser-image {
+    .browser .browser-image {
       background-size: cover;
       height: 196.875px;
       width: 350px;
       border-bottom-left-radius: 3.5px;
       border-bottom-right-radius: 3.5px; }
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image .browser-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
@@ -881,40 +881,40 @@ header {
         transition: opacity .5s;
         border-bottom-left-radius: 3.5px;
         border-bottom-right-radius: 3.5px; }
-      #browser .browser-image #browser-image-overlay:hover {
+      .browser .browser-image .browser-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 600px) and (max-width: 600px) {
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image #browser-image-overlay {
         display: none; } }
 @media (max-width: 600px) {
-      #browser .browser-image #display-image-text {
+      .browser .browser-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #browser .browser-image #display-image-text p {
+        .browser .browser-image .display-image-text p {
           text-align: justify; }
-    #browser #browser-navbar {
+    .browser .browser-navbar {
       background-color: #eeeeee;
       height: 21.875px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit; }
-    #browser .browser-button {
+    .browser .browser-button {
       margin-left: 5.46875px;
       margin-top: 7.29167px;
       width: 7.29167px;
       height: 7.29167px;
       border-radius: 3.64583px;
       float: left; }
-    #browser #browser-close {
+    .browser .browser-close {
       background-color: #f85b42; }
-    #browser #browser-max {
+    .browser .browser-max {
       background-color: #f7bd15; }
-    #browser #browser-min {
+    .browser .browser-min {
       background-color: #21ce29;
       margin-right: 10.9375px; }
-    #browser #browser-back {
+    .browser .browser-back {
       margin-right: 2.73438px; }
-    #browser #browser-back, #browser #browser-forward {
+    .browser .browser-back, .browser .browser-forward {
       margin-top: 3.64583px;
       border-radius: 2.73438px;
       float: left;
@@ -922,7 +922,7 @@ header {
       height: 14.58333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-back-arrow, .browser .browser-forward .browser-forward-arrow {
         width: 8.75px;
         height: 8.75px;
         position: relative;
@@ -932,7 +932,7 @@ header {
         border-bottom-right-radius: 1.09375px;
         border-top-right-radius: 1.09375px;
         border-bottom-left-radius: 1.09375px; }
-        #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+        .browser .browser-back .browser-back-arrow .browser-back-occluder, .browser .browser-back .browser-back-arrow .browser-forward-occluder, .browser .browser-back .browser-forward-arrow .browser-back-occluder, .browser .browser-back .browser-forward-arrow .browser-forward-occluder, .browser .browser-forward .browser-back-arrow .browser-back-occluder, .browser .browser-forward .browser-back-arrow .browser-forward-occluder, .browser .browser-forward .browser-forward-arrow .browser-back-occluder, .browser .browser-forward .browser-forward-arrow .browser-forward-occluder {
           position: relative;
           border-top-left-radius: 8.75px;
           top: -1.36719px;
@@ -940,13 +940,13 @@ header {
           width: 8.75px;
           height: 8.75px;
           background-color: #fefefe; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-forward .browser-back-arrow {
         transform: translateX(1.36719px) rotate(135deg);
         background-color: #999999; }
-      #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-forward-arrow {
         transform: translateX(-1.36719px) rotate(-45deg);
         background-color: #cccccc; }
-    #browser #browser-search {
+    .browser .browser-search {
       position: relative;
       margin-left: 10.9375px;
       margin-top: 3.64583px;
@@ -956,76 +956,76 @@ header {
       height: 14.58333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-search p {
+      .browser .browser-search p {
         line-height: 0px;
         margin-top: 7.29167px;
         font-size: 7.29167px; }
 
-  #window {
+  .window {
     margin: auto;
     width: 350px;
     height: 218.75px;
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #window .window-image {
+    .window .window-image {
       background-size: cover;
       height: 196.875px;
       width: 350px; }
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity .5s; }
-      #window .window-image #window-image-overlay:hover {
+      .window .window-image .window-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 600px) and (max-width: 600px) {
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         display: none; } }
 @media (max-width: 600px) {
-      #window .window-image #display-image-text {
+      .window .window-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #window .window-image #display-image-text p {
+        .window .window-image .display-image-text p {
           text-align: justify; }
-    #window #window-navbar {
+    .window .window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
       height: 21.875px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
       box-shadow: 0 1px 1px #cccccc; }
-    #window .window-button {
+    .window .window-button {
       width: 18.22917px;
       height: 10.9375px;
       float: right;
       cursor: default; }
-    #window .window-button:hover {
+    .window .window-button:hover {
       cursor: default; }
-    #window #window-close div {
+    .window .window-close div {
       line-height: 19.88636px;
       font-family: Raleway;
       font-size: 21.875px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-max div {
+    .window .window-max div {
       line-height: 21.875px;
       font-family: Raleway;
       font-size: 12.15278px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-min div {
+    .window .window-min div {
       line-height: 12.15278px;
       font-family: Raleway;
       font-size: 21.875px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-title {
+    .window .window-title {
       position: relative;
       margin-left: 72.91667px;
       margin-top: 3.64583px;
@@ -1033,12 +1033,12 @@ header {
       float: left;
       width: 196.875px;
       height: 14.58333px; }
-      #window #window-title p {
+      .window .window-title p {
         line-height: 0px;
         margin-top: 7.29167px;
         font-size: 7.29167px; } }
 @media (max-width: 350px) {
-  #browser {
+  .browser {
     margin: auto;
     width: 290px;
     height: 181.25px;
@@ -1046,13 +1046,13 @@ header {
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #browser .browser-image {
+    .browser .browser-image {
       background-size: cover;
       height: 163.125px;
       width: 290px;
       border-bottom-left-radius: 2.9px;
       border-bottom-right-radius: 2.9px; }
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image .browser-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
@@ -1060,40 +1060,40 @@ header {
         transition: opacity .5s;
         border-bottom-left-radius: 2.9px;
         border-bottom-right-radius: 2.9px; }
-      #browser .browser-image #browser-image-overlay:hover {
+      .browser .browser-image .browser-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 350px) and (max-width: 600px) {
-      #browser .browser-image #browser-image-overlay {
+      .browser .browser-image #browser-image-overlay {
         display: none; } }
 @media (max-width: 350px) {
-      #browser .browser-image #display-image-text {
+      .browser .browser-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #browser .browser-image #display-image-text p {
+        .browser .browser-image .display-image-text p {
           text-align: justify; }
-    #browser #browser-navbar {
+    .browser .browser-navbar {
       background-color: #eeeeee;
       height: 18.125px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit; }
-    #browser .browser-button {
+    .browser .browser-button {
       margin-left: 4.53125px;
       margin-top: 6.04167px;
       width: 6.04167px;
       height: 6.04167px;
       border-radius: 3.02083px;
       float: left; }
-    #browser #browser-close {
+    .browser .browser-close {
       background-color: #f85b42; }
-    #browser #browser-max {
+    .browser .browser-max {
       background-color: #f7bd15; }
-    #browser #browser-min {
+    .browser .browser-min {
       background-color: #21ce29;
       margin-right: 9.0625px; }
-    #browser #browser-back {
+    .browser .browser-back {
       margin-right: 2.26563px; }
-    #browser #browser-back, #browser #browser-forward {
+    .browser .browser-back, .browser .browser-forward {
       margin-top: 3.02083px;
       border-radius: 2.26563px;
       float: left;
@@ -1101,7 +1101,7 @@ header {
       height: 12.08333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-back-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-back-arrow, .browser .browser-forward .browser-forward-arrow {
         width: 7.25px;
         height: 7.25px;
         position: relative;
@@ -1111,7 +1111,7 @@ header {
         border-bottom-right-radius: 0.90625px;
         border-top-right-radius: 0.90625px;
         border-bottom-left-radius: 0.90625px; }
-        #browser #browser-back #browser-back-arrow #browser-back-occluder, #browser #browser-back #browser-back-arrow #browser-forward-occluder, #browser #browser-back #browser-forward-arrow #browser-back-occluder, #browser #browser-back #browser-forward-arrow #browser-forward-occluder, #browser #browser-forward #browser-back-arrow #browser-back-occluder, #browser #browser-forward #browser-back-arrow #browser-forward-occluder, #browser #browser-forward #browser-forward-arrow #browser-back-occluder, #browser #browser-forward #browser-forward-arrow #browser-forward-occluder {
+        .browser .browser-back .browser-back-arrow .browser-back-occluder, .browser .browser-back .browser-back-arrow .browser-forward-occluder, .browser .browser-back .browser-forward-arrow .browser-back-occluder, .browser .browser-back .browser-forward-arrow .browser-forward-occluder, .browser .browser-forward .browser-back-arrow .browser-back-occluder, .browser .browser-forward .browser-back-arrow .browser-forward-occluder, .browser .browser-forward .browser-forward-arrow .browser-back-occluder, .browser .browser-forward .browser-forward-arrow .browser-forward-occluder {
           position: relative;
           border-top-left-radius: 7.25px;
           top: -1.13281px;
@@ -1119,13 +1119,13 @@ header {
           width: 7.25px;
           height: 7.25px;
           background-color: #fefefe; }
-      #browser #browser-back #browser-back-arrow, #browser #browser-forward #browser-back-arrow {
+      .browser .browser-back .browser-back-arrow, .browser .browser-forward .browser-back-arrow {
         transform: translateX(1.13281px) rotate(135deg);
         background-color: #999999; }
-      #browser #browser-back #browser-forward-arrow, #browser #browser-forward #browser-forward-arrow {
+      .browser .browser-back .browser-forward-arrow, .browser .browser-forward .browser-forward-arrow {
         transform: translateX(-1.13281px) rotate(-45deg);
         background-color: #cccccc; }
-    #browser #browser-search {
+    .browser .browser-search {
       position: relative;
       margin-left: 9.0625px;
       margin-top: 3.02083px;
@@ -1135,76 +1135,76 @@ header {
       height: 12.08333px;
       background-color: #fefefe;
       box-shadow: 0 1px 0 #cccccc; }
-      #browser #browser-search p {
+      .browser .browser-search p {
         line-height: 0px;
         margin-top: 6.04167px;
         font-size: 6.04167px; }
 
-  #window {
+  .window {
     margin: auto;
     width: 290px;
     height: 181.25px;
     border-width: 1px;
     border-color: #d1d1d1;
     border-style: solid; }
-    #window .window-image {
+    .window .window-image {
       background-size: cover;
       height: 163.125px;
       width: 290px; }
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         background-color: #303030;
         width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity .5s; }
-      #window .window-image #window-image-overlay:hover {
+      .window .window-image .window-image-overlay:hover {
         opacity: .8; } }
     @media (max-width: 350px) and (max-width: 600px) {
-      #window .window-image #window-image-overlay {
+      .window .window-image .window-image-overlay {
         display: none; } }
 @media (max-width: 350px) {
-      #window .window-image #display-image-text {
+      .window .window-image .display-image-text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-        #window .window-image #display-image-text p {
+        .window .window-image .display-image-text p {
           text-align: justify; }
-    #window #window-navbar {
+    .window .window-navbar {
       /*background-color: #eeeeee;*/
       background-color: #c6e8fc;
       height: 18.125px;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
       box-shadow: 0 1px 1px #cccccc; }
-    #window .window-button {
+    .window .window-button {
       width: 15.10417px;
       height: 9.0625px;
       float: right;
       cursor: default; }
-    #window .window-button:hover {
+    .window .window-button:hover {
       cursor: default; }
-    #window #window-close div {
+    .window .window-close div {
       line-height: 16.47727px;
       font-family: Raleway;
       font-size: 18.125px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-max div {
+    .window .window-max div {
       line-height: 18.125px;
       font-family: Raleway;
       font-size: 10.06944px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-min div {
+    .window .window-min div {
       line-height: 10.06944px;
       font-family: Raleway;
       font-size: 18.125px;
       color: #303030;
       margin: auto;
       font-weight: 200; }
-    #window #window-title {
+    .window .window-title {
       position: relative;
       margin-left: 60.41667px;
       margin-top: 3.02083px;
@@ -1212,7 +1212,7 @@ header {
       float: left;
       width: 163.125px;
       height: 12.08333px; }
-      #window #window-title p {
+      .window .window-title p {
         line-height: 0px;
         margin-top: 6.04167px;
         font-size: 6.04167px; } }
