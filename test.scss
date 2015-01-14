@@ -208,11 +208,9 @@ header{
 
 #intro{
 
-	.flex-container{
-		width:100%;
-		margin: auto;
-	}
-
+	width:100%;
+	margin: auto;
+	
 	.flex-item{
 		width: 250px;
 		flex-grow: 1;
@@ -222,9 +220,9 @@ header{
 		max-width: 30rem;
 	}
 	@media (max-width: $medium-breakpoint){
-		.flex-container{
-			flex-direction: column;
-		}
+
+		flex-direction: column;
+
 		.flex-item{
 			margin: 0px auto;
 		}
@@ -306,8 +304,6 @@ header{
 			background-size: cover;
 			height: $browser-height*.9;
 			width: $browser-width;
-			border-bottom-left-radius: $browser-width/100;
-			border-bottom-right-radius: $browser-width/100;
 
 			.browser-image-overlay{
 				background-color: $dark-color;
@@ -315,14 +311,12 @@ header{
 				height: 100%;
 				opacity: 0;
 				transition: opacity .5s;
-				border-bottom-left-radius: $browser-width/100;
-				border-bottom-right-radius: $browser-width/100;
 			}
 			.browser-image-overlay:hover{
-				opacity: .8;
+				opacity: .9;
 			}
 			@media(max-width: $medium-breakpoint ){
-				#browser-image-overlay{
+				.browser-image-overlay{
 					display: none;
 				}
 			}
@@ -336,7 +330,6 @@ header{
 			}
 
 		}
-
 		.browser-navbar{
 			background-color: #eeeeee;
 			height: $browser-height/10;
@@ -450,7 +443,7 @@ header{
 				transition: opacity .5s;
 			}
 			.window-image-overlay:hover{
-				opacity: .8;
+				opacity: .9;
 			}
 			@media(max-width: $medium-breakpoint ){
 				.window-image-overlay{
@@ -688,7 +681,7 @@ header{
 			transition: background-color .25s, box-shadow .25s, opacity .25s;
 			opacity: .6;
 
-			box-shadow: 0 0 0 12px $dark-color;
+			box-shadow: 0 0 0 10px $dark-color;
 
 			[class^="icon-"], [class*=" icon-"] {
 			    height: 18px;
