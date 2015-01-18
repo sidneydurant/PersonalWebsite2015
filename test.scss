@@ -36,7 +36,7 @@ a:hover{
 
 html{
 	font-size: 80%;
-	@media(max-width: 1400px){
+	@media(max-width: $wide-breakpoint){
 		font-size:62.5%;
 	}
 }
@@ -47,7 +47,10 @@ body{
 
 .half{
 	display: inline-block;
-	transform: translateY(2px);
+	transform: translateY(3px);
+	transform: translateY(.3rem);
+	font-size: 28px;
+	font-size: 2.8rem;
 }
 
 .shadowed{
@@ -66,9 +69,10 @@ h3{
 	color: $dark-color;
 	text-align: center;
 	font-variant: small-caps;
+	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 28px;
-	font-size: 2.8rem;
+	font-size: 21px;
+	font-size: 2.1rem;
 	line-height: 1;
 	padding-bottom: 32px;
 }
@@ -104,16 +108,12 @@ p{
 	opacity: 0;
 	position: fixed;
 	z-index: 2;
-	h1{
-		font-size: 32px;
-		font-size: 3.2rem;
-	}
 	@media (max-width: $wide-breakpoint){
 		display:none;
 	}
 	h1,h2{
-		font-size: 32px;
-		font-size: 3.2rem;
+		font-size: 23px;
+		font-size: 2.3rem;
 	}
 	h1:hover,h2:hover{
 		cursor:pointer;
@@ -122,19 +122,6 @@ p{
 
 $topHeight: 280px;
 
-#scrolling-header{
-	padding-top: $topHeight*1.3;
-	@media (max-width: $wide-breakpoint){
-		padding-top: $topHeight;
-	}
-	h2{
-		font-size: 32px;
-		font-size:3.2rem;
-	}
-	h1:hover,h2:hover{
-		cursor:pointer;
-	}
-}
 
 h1, h2{
 	font-family: "Raleway", sans-serif;
@@ -144,19 +131,36 @@ h1, h2{
 	line-height: 80px;
 }
 
+#scrolling-header{
+	padding-top: $topHeight*1.3;
+	@media (max-width: $wide-breakpoint){
+		padding-top: $topHeight;
+	}
+	h2{
+		font-size: 23px;
+		font-size: 2.3rem;
+	}
+	h1{
+		font-size: 40px;
+	}
+	h1:hover,h2:hover{
+		cursor:pointer;
+	}
+}
+
+
 #lowpolyme{
 	position: absolute;
-	top: 10px;
-	left: 13%;
+	left: 0px;
+	right: 0px;
+	margin:auto;
 	z-index: 100;
 	background-image: url("images/lowpoly-lowres-lineless.png");
 	width: 325px;
 	height: 357.5px;
 	background-size: cover;
 	@media (max-width: $wide-breakpoint){
-		left: 0px;
-		right: 0px;
-		margin:auto;
+		
 		width: 250px;
 		height: 275px;
 	}
@@ -188,10 +192,16 @@ header{
 	}
 
 	.flex-item{
-		padding-left: 12px;
-		padding-left: 1.2rem;
-		padding-right: 12px;
-		padding-right: 1.2rem;
+		padding-left: 24px;
+		padding-left: 2.4rem;
+		padding-right: 24px;
+		padding-right: 2.4rem;
+		@media( max-width: 1400px){
+			padding-left: 12px;
+			padding-left: 1.2rem;
+			padding-right: 12px;
+			padding-right: 1.2rem;
+		}
 		@media( max-width: $wide-breakpoint){
 			display: none;
 		}
@@ -239,10 +249,7 @@ header{
 }
 
 #projects{
-	background: #f9f9f9;
-	html.cssgradients &{
-		background: linear-gradient( to right, #fdfdfd, #f9f9f9, #fefefe, #f7f7f7);
-	}
+	background: #fafafa;
 	.display{
 		margin-bottom: 48px;
 	}
