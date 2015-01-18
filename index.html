@@ -23,6 +23,7 @@ Handmade ASCII art is how you make the world a better place.
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Sidney Durant's resume and portfolio website.">
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.ico">
 
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
 
@@ -97,6 +98,17 @@ Handmade ASCII art is how you make the world a better place.
 
 	});
 
+	var updateButtons = function(){
+        var $top = $(window).scrollTop() + .25*$(window).height();
+        $('.navButton').removeClass('current-section');
+        $('.projectsButtonText').toggleClass( 'current-section', $top >= $('#projects').offset({scroll:false}).top && $top < $('#resume').offset({scroll:false}).top);
+        $('.resumeButtonText').toggleClass('current-section', $top >= $('#resume').offset({scroll:false}).top && $(window).scrollTop() + $(window).height() < $(document).height()-2);
+        $('.contactButtonText').toggleClass('current-section', $(window).scrollTop() + $(window).height() >= $(document).height()-2 );
+    };
+
+    $(document).scroll(updateButtons);
+    updateButtons();
+
 </script>
 
 </head>
@@ -107,18 +119,18 @@ Handmade ASCII art is how you make the world a better place.
 
 <header id="fixed-header">
 	<div class="flex-container">
-		<div class="flex-item homeButton"><h1> Sidney Durant </h1></div>
-		<div class="flex-item projectsButton"><h2> Projects </h2> </div>
-		<div class="flex-item resumeButton"><h2> Resume </h2> </div>
-		<div class="flex-item contactButton"><h2> Contact </h2> </div>
+		<div class="flex-item homeButton navButton"><h1 class="homeButtonText"> Sidney Durant </h1></div>
+		<div class="flex-item projectsButton navButton"><h2 class="projectsButtonText"> Projects </h2></div>
+		<div class="flex-item resumeButton navButton"><h2 class="resumeButtonText"> Resume </h2> </div>
+		<div class="flex-item contactButton navButton"><h2 class="contactButtonText"> Contact </h2> </div>
 	</div>
 </header>
 <header id="scrolling-header">
 	<div class="flex-container">
-		<div class="flex-item homeButton"><h1> Sidney Durant </h1></div>
-		<div class="flex-item projectsButton"><h2> Projects </h2> </div>
-		<div class="flex-item resumeButton"><h2> Resume </h2> </div>
-		<div class="flex-item contactButton"><h2> Contact </h2> </div>
+		<div class="flex-item homeButton navButton"><h1 class="homeButtonText"> Sidney Durant </h1></div>
+		<div class="flex-item projectsButton navButton"><h2 class="projectsButtonText"> Projects </h2></div>
+		<div class="flex-item resumeButton navButton"><h2 class="resumeButtonText"> Resume </h2> </div>
+		<div class="flex-item contactButton navButton"><h2 class="contactButtonText"> Contact </h2> </div>
 	</div>
 </header>
 
